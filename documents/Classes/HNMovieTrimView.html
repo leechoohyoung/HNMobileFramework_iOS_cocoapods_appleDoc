@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNMovieTrimView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/leftDimView">leftDimView</option>
+		
+		<option value="//api/name/leftPanningGestureRecognizer">leftPanningGestureRecognizer</option>
+		
+		<option value="//api/name/leftTrimImgV">leftTrimImgV</option>
+		
+		<option value="//api/name/loadingIndicatorView">loadingIndicatorView</option>
+		
+		<option value="//api/name/minimumGap">minimumGap</option>
+		
+		<option value="//api/name/prevLeftPanningPosition">prevLeftPanningPosition</option>
+		
+		<option value="//api/name/prevRightPanningPosition">prevRightPanningPosition</option>
+		
+		<option value="//api/name/rightDimView">rightDimView</option>
+		
+		<option value="//api/name/rightPanningGestureRecognizer">rightPanningGestureRecognizer</option>
+		
+		<option value="//api/name/rightTrimImgV">rightTrimImgV</option>
+		
+		<option value="//api/name/thumbnailView">thumbnailView</option>
+		
+		<option value="//api/name/trimEndViewPositionChangedBlock">trimEndViewPositionChangedBlock</option>
+		
+		<option value="//api/name/trimStartViewPositionChangedBlock">trimStartViewPositionChangedBlock</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/gestureRecognizer:shouldReceivePress:">- gestureRecognizer:shouldReceivePress:</option>
+		
+		<option value="//api/name/gestureRecognizer:shouldReceiveTouch:">- gestureRecognizer:shouldReceiveTouch:</option>
+		
+		<option value="//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:">- gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</option>
+		
+		<option value="//api/name/gestureRecognizerShouldBegin:">- gestureRecognizerShouldBegin:</option>
+		
+		<option value="//api/name/handleLeftPanningGesture:">- handleLeftPanningGesture:</option>
+		
+		<option value="//api/name/handleRightPanningGesture:">- handleRightPanningGesture:</option>
+		
+		<option value="//api/name/initWithCoder:">- initWithCoder:</option>
+		
+		<option value="//api/name/initWithFrame:">- initWithFrame:</option>
+		
+		<option value="//api/name/setupWithMinimumGap:">- setupWithMinimumGap:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNMovieTrimView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>UIGestureRecognizerDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNMovieTrimView.h<br />HNMovieTrimView.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="../Classes/HNMovieThumbnailView.html">HNMovieThumbnailView</a> 를 이용하여 동영상 잘라내기 기능을 보여주기 위한 UIView 확장 클래스</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/thumbnailView" title="thumbnailView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/thumbnailView">&nbsp;&nbsp;thumbnailView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>동영상의 썸네일 이미지 뷰</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) HNMovieThumbnailView *thumbnailView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/leftTrimImgV" title="leftTrimImgV"></a>
+	<h3 class="method-title"><code><a href="#//api/name/leftTrimImgV">&nbsp;&nbsp;leftTrimImgV</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>좌측 편집 이미지 뷰</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIImageView *leftTrimImgV</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rightTrimImgV" title="rightTrimImgV"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rightTrimImgV">&nbsp;&nbsp;rightTrimImgV</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>우측 편집 이미지 뷰</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIImageView *rightTrimImgV</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/leftDimView" title="leftDimView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/leftDimView">&nbsp;&nbsp;leftDimView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>좌측 반투명 뷰</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIView *leftDimView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rightDimView" title="rightDimView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rightDimView">&nbsp;&nbsp;rightDimView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>우측 반투명 뷰</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIView *rightDimView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadingIndicatorView" title="loadingIndicatorView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadingIndicatorView">&nbsp;&nbsp;loadingIndicatorView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>썸네일 이미지 로딩 인디케이터 뷰</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIActivityIndicatorView *loadingIndicatorView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trimStartViewPositionChangedBlock" title="trimStartViewPositionChangedBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trimStartViewPositionChangedBlock">&nbsp;&nbsp;trimStartViewPositionChangedBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>좌측 편집 이미지뷰의 위치가 변경되었을 때 호출될 블럭 (main thread 에서 호출됨)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) onTrimStartViewPositionChangedBlock _Nullable trimStartViewPositionChangedBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/setupWithMinimumGap:">setupWithMinimumGap:</a> 메소드 호출 전에 블럭이 설정되어야 정상적으로 호출될 수 있음</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trimEndViewPositionChangedBlock" title="trimEndViewPositionChangedBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trimEndViewPositionChangedBlock">&nbsp;&nbsp;trimEndViewPositionChangedBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>우측 편집 이미지뷰의 위치가 변경되었을 때 호출될 블럭 (main thread 에서 호출됨)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) onTrimEndViewPositionChangedBlock _Nullable trimEndViewPositionChangedBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/setupWithMinimumGap:">setupWithMinimumGap:</a> 메소드 호출 전에 블럭이 설정되어야 정상적으로 호출될 수 있음</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setupWithMinimumGap:" title="setupWithMinimumGap:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setupWithMinimumGap:">&ndash;&nbsp;setupWithMinimumGap:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>초기화 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setupWithMinimumGap:(CGFloat)<em>minimumGap</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minimumGap</code></th>
+						<td><p>좌, 우측 편집 이미지 뷰의 최소 거리</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithFrame:" title="initWithFrame:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithFrame:">&ndash;&nbsp;initWithFrame:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithFrame:(CGRect)<em>frame</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithCoder:" title="initWithCoder:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithCoder:">&ndash;&nbsp;initWithCoder:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithCoder:(NSCoder *)<em>aDecoder</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleRightPanningGesture:" title="handleRightPanningGesture:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleRightPanningGesture:">&ndash;&nbsp;handleRightPanningGesture:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)handleRightPanningGesture:(UIPanGestureRecognizer *)<em>gestureRecognizer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleLeftPanningGesture:" title="handleLeftPanningGesture:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleLeftPanningGesture:">&ndash;&nbsp;handleLeftPanningGesture:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)handleLeftPanningGesture:(UIPanGestureRecognizer *)<em>gestureRecognizer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gestureRecognizerShouldBegin:" title="gestureRecognizerShouldBegin:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gestureRecognizerShouldBegin:">&ndash;&nbsp;gestureRecognizerShouldBegin:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)<em>gestureRecognizer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gestureRecognizer:shouldReceiveTouch:" title="gestureRecognizer:shouldReceiveTouch:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gestureRecognizer:shouldReceiveTouch:">&ndash;&nbsp;gestureRecognizer:shouldReceiveTouch:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)<em>gestureRecognizer</em> shouldReceiveTouch:(UITouch *)<em>touch</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gestureRecognizer:shouldReceivePress:" title="gestureRecognizer:shouldReceivePress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gestureRecognizer:shouldReceivePress:">&ndash;&nbsp;gestureRecognizer:shouldReceivePress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)<em>gestureRecognizer</em> shouldReceivePress:(UIPress *)<em>press</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:" title="gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:">&ndash;&nbsp;gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)gestureRecognizer:(UIGestureRecognizer *)<em>gestureRecognizer</em> shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)<em>otherGestureRecognizer</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/prevLeftPanningPosition" title="prevLeftPanningPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prevLeftPanningPosition">&nbsp;&nbsp;prevLeftPanningPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint prevLeftPanningPosition</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prevRightPanningPosition" title="prevRightPanningPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prevRightPanningPosition">&nbsp;&nbsp;prevRightPanningPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint prevRightPanningPosition</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minimumGap" title="minimumGap"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minimumGap">&nbsp;&nbsp;minimumGap</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat minimumGap</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rightPanningGestureRecognizer" title="rightPanningGestureRecognizer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rightPanningGestureRecognizer">&nbsp;&nbsp;rightPanningGestureRecognizer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIPanGestureRecognizer *rightPanningGestureRecognizer</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/leftPanningGestureRecognizer" title="leftPanningGestureRecognizer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/leftPanningGestureRecognizer">&nbsp;&nbsp;leftPanningGestureRecognizer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIPanGestureRecognizer *leftPanningGestureRecognizer</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

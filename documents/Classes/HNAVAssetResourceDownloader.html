@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNAVAssetResourceDownloader Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/assetNameForTask">assetNameForTask</option>
+		
+		<option value="//api/name/avAssetNSURLAuthenticationChallengeBlock">avAssetNSURLAuthenticationChallengeBlock</option>
+		
+		<option value="//api/name/avAssetResourceLoaderDelegate">avAssetResourceLoaderDelegate</option>
+		
+		<option value="//api/name/completionBlock">completionBlock</option>
+		
+		<option value="//api/name/completionHandlerForLaterUse">completionHandlerForLaterUse</option>
+		
+		<option value="//api/name/defaultResourceLoaderDelegate">defaultResourceLoaderDelegate</option>
+		
+		<option value="//api/name/downloadedFileURLForTask">downloadedFileURLForTask</option>
+		
+		<option value="//api/name/progressBlock">progressBlock</option>
+		
+		<option value="//api/name/renewalLoadingRequestBlock">renewalLoadingRequestBlock</option>
+		
+		<option value="//api/name/resourceLoadingRequestBlock">resourceLoadingRequestBlock</option>
+		
+		<option value="//api/name/selectionDic">selectionDic</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/getInstance">+ getInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/URLSession:assetDownloadTask:didFinishDownloadingToURL:">- URLSession:assetDownloadTask:didFinishDownloadingToURL:</option>
+		
+		<option value="//api/name/URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:">- URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:</option>
+		
+		<option value="//api/name/URLSession:assetDownloadTask:didResolveMediaSelection:">- URLSession:assetDownloadTask:didResolveMediaSelection:</option>
+		
+		<option value="//api/name/URLSession:didBecomeInvalidWithError:">- URLSession:didBecomeInvalidWithError:</option>
+		
+		<option value="//api/name/URLSession:task:didCompleteWithError:">- URLSession:task:didCompleteWithError:</option>
+		
+		<option value="//api/name/URLSessionDidFinishEventsForBackgroundURLSession:">- URLSessionDidFinishEventsForBackgroundURLSession:</option>
+		
+		<option value="//api/name/archiveNSURLSessionConfigurationID:">- archiveNSURLSessionConfigurationID:</option>
+		
+		<option value="//api/name/clearPreviousIDWithCurrentID:">- clearPreviousIDWithCurrentID:</option>
+		
+		<option value="//api/name/downloadAdditionalAssetWithTask:">- downloadAdditionalAssetWithTask:</option>
+		
+		<option value="//api/name/downloadedAVAssetFileURLDictionary">- downloadedAVAssetFileURLDictionary</option>
+		
+		<option value="//api/name/handleEventsForBackgroundURLSession:completionHandler:">- handleEventsForBackgroundURLSession:completionHandler:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/previousNSURLSessionConfigurationID">- previousNSURLSessionConfigurationID</option>
+		
+		<option value="//api/name/restoreDownloadTask">- restoreDownloadTask</option>
+		
+		<option value="//api/name/restoreDownloadTaskWithNSURLSessionConfigurationID:">- restoreDownloadTaskWithNSURLSessionConfigurationID:</option>
+		
+		<option value="//api/name/taskWithName:url:">- taskWithName:url:</option>
+		
+		<option value="//api/name/taskWithName:url:allowCellular:">- taskWithName:url:allowCellular:</option>
+		
+		<option value="//api/name/taskWithName:url:allowCellular:discretionary:">- taskWithName:url:allowCellular:discretionary:</option>
+		
+		<option value="//api/name/unArchiveNSURLSessionConfigurationID">- unArchiveNSURLSessionConfigurationID</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNAVAssetResourceDownloader Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>AVAssetDownloadDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNAVAssetResourceDownloader.h<br />HNAVAssetResourceDownloader.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>AVURLAsset 다운로드를 담당하는 클래스.</p><p>AVAssetDownloadTask 클래스가 iOS 9.0+ 지원하는 것으로 문서상에 명시되어 있지만,
+iOS 9.x.x 버전의 단말기에서 앱 실행시 해당 심볼을 찾지 못하는 문제가 발생함.</p>
+
+<p>AVFoundation 프레임워크를 weak link 로 변경하면 위의 문제는 해결되지만,
+[AVAssetDownloadURLSession assetDownloadTaskWithURLAsset:destinationURL:options:] 메소드에 의해 리턴되는 값이 NULL 이므로,
+다운로드가 진행되지 않는 문제는 여전히 존재함.</p>
+
+<p>즉, AVAssetDownloadURLSession 및 AVAssetDownloadTask 사용은 iOS 10.0 부터 가능함.</p>
+
+<p>iOS 10.0 이상의 환경에서 HLS 다운로드가 정상적으로 진행되려면 아래의 조건을 만족해야 함.</p>
+
+<ol>
+<li>앱의 UIApplicationDelegate 구현 객체가 HNAVAssetAppDelegate 를 확장해야 하며, 메소드 내에서 [super &hellip;] 메소드를 호출해야 함.</li>
+</ol>
+
+
+<p>application:didFinishLaunchingWithOptions:</p>
+
+<p>application:handleEventsForBackgroundURLSession:completionHandler:</p>
+
+<ol>
+<li>앱의 Info.plist 의 UIBackgroundModes 항목에 fetch 를 추가하거나, Capabilities > Background Modes > Background Fetch 항목을 활성화 해야 함.</li>
+</ol>
+
+
+<p>그러지 않으면, 앱이 background 진입 후 HLS 다운로드가 정상적으로 진행되지 않을 수 있음.</p>
+
+<p>앱이 시스템에 의해 종료된 이후 다운로드된 파일에 대한 정보를 획득하고 처리하려면 <a href="#//api/name/downloadedAVAssetFileURLDictionary">[HNAVAssetResourceDownloader downloadedAVAssetFileURLDictionary]</a> 메소드를 이용할 것.</p>
+
+<p>멀티 파일 동시 다운로드 지원.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInstance" title="getInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInstance">+&nbsp;getInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVResourceDownloader 객체 리턴</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype _Nonnull)getInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVResourceDownloader</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Singleton</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskWithName:url:" title="taskWithName:url:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskWithName:url:">&ndash;&nbsp;taskWithName:url:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 다운로드를 위한 AVAssetDownloadTask 생성</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AVAssetDownloadTask *)taskWithName:(NSString *)<em>assetName</em> url:(NSURL *)<em>avAssetURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>assetName</code></th>
+						<td><p>AVURLAsset 이름</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>avAssetURL</code></th>
+						<td><p>다운로드할 URL</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVAssetDownloadTask</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>[AVAssetDownloadTask resume] 메소드를 호출해야만 다운로드가 시작됨.</p>
+
+<p>또한, LTE 또는 3G 망에서 다운로드되지 않음.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskWithName:url:allowCellular:" title="taskWithName:url:allowCellular:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskWithName:url:allowCellular:">&ndash;&nbsp;taskWithName:url:allowCellular:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 다운로드를 위한 AVAssetDownloadTask 생성</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AVAssetDownloadTask *_Nonnull)taskWithName:(NSString *_Nonnull)<em>assetName</em> url:(NSURL *_Nonnull)<em>avAssetURL</em> allowCellular:(BOOL)<em>allowCellular</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>assetName</code></th>
+						<td><p>AVURLAsset 이름</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>avAssetURL</code></th>
+						<td><p>다운로드할 URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>allowCellular</code></th>
+						<td><p>LTE 또는 3G 망에서 다운로드 허용 여부 (허용할 경우 YES, 그렇지 않으면 NO)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVAssetDownloadTask</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>[AVAssetDownloadTask resume] 메소드를 호출해야만 다운로드가 시작됨.</p>
+
+<p>또한, allowCellular 값에 상관없이 iOS 시스템의 판단에 의해 언제 다운로드가 진행될 지 결정되므로</p>
+
+<p>파일의 크기에 따라 LTE, 3G 망에서 다운로드가 시작되지 않을 수 있음.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/taskWithName:url:allowCellular:discretionary:" title="taskWithName:url:allowCellular:discretionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/taskWithName:url:allowCellular:discretionary:">&ndash;&nbsp;taskWithName:url:allowCellular:discretionary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 다운로드를 위한 AVAssetDownloadTask 생성</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AVAssetDownloadTask *_Nonnull)taskWithName:(NSString *_Nonnull)<em>assetName</em> url:(NSURL *_Nonnull)<em>avAssetURL</em> allowCellular:(BOOL)<em>allowCellular</em> discretionary:(BOOL)<em>discretionary</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>assetName</code></th>
+						<td><p>AVURLAsset 이름</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>avAssetURL</code></th>
+						<td><p>다운로드할 URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>allowCellular</code></th>
+						<td><p>LTE 또는 3G 망에서 다운로드 허용 여부 (허용할 경우 YES, 그렇지 않으면 NO)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>discretionary</code></th>
+						<td><p>iOS 시스템의 판단에 의해 언제 다운로드가 진행될 지 결정할 권한 위임 여부 (시스템에 의해 시작되도록 하려면 YES, 그렇지 않으면 NO)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVAssetDownloadTask</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>[AVAssetDownloadTask resume] 메소드를 호출해야만 다운로드가 시작됨.</p>
+
+<p>또한, discretionary 가 YES 일 경우, allowCellular 값에 상관없이 LTE, 3G 망에서 다운로드가 시작되지 않을 수 있음.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/restoreDownloadTask" title="restoreDownloadTask"></a>
+	<h3 class="method-title"><code><a href="#//api/name/restoreDownloadTask">&ndash;&nbsp;restoreDownloadTask</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code> AVAssetDownloadTask 클래스가 iOS 9.0+ 지원하는 것으로 문서상에 명시되어 있지만,
+ iOS 9.3.x 버전의 단말기에서 앱 실행시 해당 심볼을 찾지 못하는 문제가 발생함.
+
+ AVFoundation 프레임워크를 weak link 로 변경하면 위의 문제는 해결되지만,
+ [AVAssetDownloadURLSession assetDownloadTaskWithURLAsset:destinationURL:options:] 메소드에 의해 리턴되는 값이 NULL 이므로,
+ 다운로드가 진행되지 않는 문제는 여전히 존재함.
+
+ 즉, AVAssetDownloadURLSession 및 AVAssetDownloadTask 사용은 iOS 10.0 부터 가능함
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)restoreDownloadTask</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/previousNSURLSessionConfigurationID" title="previousNSURLSessionConfigurationID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/previousNSURLSessionConfigurationID">&ndash;&nbsp;previousNSURLSessionConfigurationID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>이전에 실패한 다운로드 세션의 식별자 리턴</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)previousNSURLSessionConfigurationID</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>실패한 다운로드 작업이 없을 경우 nil 리턴</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadedAVAssetFileURLDictionary" title="downloadedAVAssetFileURLDictionary"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadedAVAssetFileURLDictionary">&ndash;&nbsp;downloadedAVAssetFileURLDictionary</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>private/var/mobile/Containers/Data/Application/47ACC1A9-73FB-4414-A323-32BD11199512/Library/com.apple.UserManagedAssets.umSEuL/hscdn(insecure)_0874B06B331E960B.movpkg</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nullable)downloadedAVAssetFileURLDictionary</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleEventsForBackgroundURLSession:completionHandler:" title="handleEventsForBackgroundURLSession:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleEventsForBackgroundURLSession:completionHandler:">&ndash;&nbsp;handleEventsForBackgroundURLSession:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>application:handleEventsForBackgroundURLSession:completionHandler: 메소드가 호출될 때 실행되어야 하는 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)handleEventsForBackgroundURLSession:(NSString *_Nonnull)<em>identifier</em> completionHandler:(void ( ^ _Nonnull ) ( void ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>The identifier of the URL session requiring attention. If your app was just launched, you can use this identifier to create a new NSURLSession object that can receive the events.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>The completion handler to call when you finish processing the events. Calling this completion handler lets the system know that your app’s user interface is updated and a new snapshot can be taken.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>background 에서 실행된 NSURLSession 객체와 관련하여 처리가 필요할 경우 시스템은 [UIApplication application:handleEventsForBackgroundURLSession:completionHandler:] 메소드를 호출한 후
+[NSURLSessionDelegate URLSessionDidFinishEventsForBackgroundURLSession:] 메소드를 호출하므로 completionHandler 복사 및 NSURLSession 처리를 진행</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/restoreDownloadTaskWithNSURLSessionConfigurationID:" title="restoreDownloadTaskWithNSURLSessionConfigurationID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/restoreDownloadTaskWithNSURLSessionConfigurationID:">&ndash;&nbsp;restoreDownloadTaskWithNSURLSessionConfigurationID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>background 에서 진행중인 AVAssetDownloadTask 객체를 검색하고 복구</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)restoreDownloadTaskWithNSURLSessionConfigurationID:(NSString *)<em>identifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>background 에서 진행중인 AVAssetDownloadTask 객체를 찾기 위한 NSURLSessionConfiguration 식별자</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/archiveNSURLSessionConfigurationID:" title="archiveNSURLSessionConfigurationID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/archiveNSURLSessionConfigurationID:">&ndash;&nbsp;archiveNSURLSessionConfigurationID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>NSURLSessionConfiguration 식별자를 직렬화하여 저장</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)archiveNSURLSessionConfigurationID:(NSString *)<em>identifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>NSURLSessionConfiguration 식별자</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unArchiveNSURLSessionConfigurationID" title="unArchiveNSURLSessionConfigurationID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unArchiveNSURLSessionConfigurationID">&ndash;&nbsp;unArchiveNSURLSessionConfigurationID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>저장된 NSURLSessionConfiguration 식별자를 리턴</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)unArchiveNSURLSessionConfigurationID</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSURLSessionConfiguration 식별자</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearPreviousIDWithCurrentID:" title="clearPreviousIDWithCurrentID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearPreviousIDWithCurrentID:">&ndash;&nbsp;clearPreviousIDWithCurrentID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>저장된 NSURLSessionConfiguration 식별자를 초기화</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearPreviousIDWithCurrentID:(NSString *)<em>previousID</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadAdditionalAssetWithTask:" title="downloadAdditionalAssetWithTask:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadAdditionalAssetWithTask:">&ndash;&nbsp;downloadAdditionalAssetWithTask:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 을 다운로드 후 추가적인 AVURLAsset 을 다운로드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadAdditionalAssetWithTask:(AVAssetDownloadTask *)<em>task</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>task</code></th>
+						<td><p>AVAssetDownloadTask 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HLS 컨텐츠는 다국어(자막 포함)를 지원하기 때문에 하나 이상의 AVURLAsset 을 다운로드할 수 있음</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:assetDownloadTask:didFinishDownloadingToURL:" title="URLSession:assetDownloadTask:didFinishDownloadingToURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:assetDownloadTask:didFinishDownloadingToURL:">&ndash;&nbsp;URLSession:assetDownloadTask:didFinishDownloadingToURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> assetDownloadTask:(AVAssetDownloadTask *)<em>assetDownloadTask</em> didFinishDownloadingToURL:(NSURL *)<em>location</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:" title="URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:">&ndash;&nbsp;URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> assetDownloadTask:(AVAssetDownloadTask *)<em>assetDownloadTask</em> didLoadTimeRange:(CMTimeRange)<em>timeRange</em> totalTimeRangesLoaded:(NSArray&lt;NSValue*&gt; *)<em>loadedTimeRanges</em> timeRangeExpectedToLoad:(CMTimeRange)<em>timeRangeExpectedToLoad</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:assetDownloadTask:didResolveMediaSelection:" title="URLSession:assetDownloadTask:didResolveMediaSelection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:assetDownloadTask:didResolveMediaSelection:">&ndash;&nbsp;URLSession:assetDownloadTask:didResolveMediaSelection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> assetDownloadTask:(AVAssetDownloadTask *)<em>assetDownloadTask</em> didResolveMediaSelection:(AVMediaSelection *)<em>resolvedMediaSelection</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:task:didCompleteWithError:" title="URLSession:task:didCompleteWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:task:didCompleteWithError:">&ndash;&nbsp;URLSession:task:didCompleteWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> task:(NSURLSessionTask *)<em>task</em> didCompleteWithError:(nullable NSError *)<em>error</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:didBecomeInvalidWithError:" title="URLSession:didBecomeInvalidWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:didBecomeInvalidWithError:">&ndash;&nbsp;URLSession:didBecomeInvalidWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> didBecomeInvalidWithError:(nullable NSError *)<em>error</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSessionDidFinishEventsForBackgroundURLSession:" title="URLSessionDidFinishEventsForBackgroundURLSession:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSessionDidFinishEventsForBackgroundURLSession:">&ndash;&nbsp;URLSessionDidFinishEventsForBackgroundURLSession:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)<em>session</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/completionBlock" title="completionBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/completionBlock">&nbsp;&nbsp;completionBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>다운로드 완료되면 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNAVAssetResourceDownloaderCompleteBlock _Nullable completionBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/progressBlock" title="progressBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/progressBlock">&nbsp;&nbsp;progressBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>다운로드 중에 주기적으로 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNAVAssetResourceDownloaderProgressBlock _Nullable progressBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avAssetResourceLoaderDelegate" title="avAssetResourceLoaderDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avAssetResourceLoaderDelegate">&nbsp;&nbsp;avAssetResourceLoaderDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAssetResourceLoaderDelegate 구현 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSObject&lt;AVAssetResourceLoaderDelegate&gt; *avAssetResourceLoaderDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVURLAsset 을 재생하는 과정에서 Http Digest 인증을 해야 할 경우
+AVAssetResourceLoaderDelegate 구현 객체를 설정함으로써 진행할 수 있음</p>
+
+<p>만약, 이 속성을 유효한 객체로 설정하지 않을 경우 <a href="#//api/name/avAssetNSURLAuthenticationChallengeBlock">avAssetNSURLAuthenticationChallengeBlock</a> 블럭을 반드시 구현해야 함.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avAssetNSURLAuthenticationChallengeBlock" title="avAssetNSURLAuthenticationChallengeBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avAssetNSURLAuthenticationChallengeBlock">&nbsp;&nbsp;avAssetNSURLAuthenticationChallengeBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 을 로딩하는 과정에서 Http Digest 인증을 해야 할 경우 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetNSURLAuthenticationChallengeBlock avAssetNSURLAuthenticationChallengeBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+
+<p>만약, 이 블럭을 구현하지 않을 경우 <a href="#//api/name/avAssetResourceLoaderDelegate">avAssetResourceLoaderDelegate</a> 속성에 반드시 유효한 객체가 설정되어야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resourceLoadingRequestBlock" title="resourceLoadingRequestBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoadingRequestBlock">&nbsp;&nbsp;resourceLoadingRequestBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 을 로딩하는 과정에서 추가적인 리소스 로딩이 필요할 경우 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetResourceLoadingRequestBlock resourceLoadingRequestBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+
+<p>만약, 이 블럭을 구현하지 않을 경우 <a href="#//api/name/avAssetResourceLoaderDelegate">avAssetResourceLoaderDelegate</a> 속성에 반드시 유효한 객체가 설정되어야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/renewalLoadingRequestBlock" title="renewalLoadingRequestBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/renewalLoadingRequestBlock">&nbsp;&nbsp;renewalLoadingRequestBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 을 로딩하는 과정에서 추가적인 리소스 로딩이 필요할 경우 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetResourceRenewalLoadingRequestBlock renewalLoadingRequestBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+
+<p>만약, 이 블럭을 구현하지 않을 경우 <a href="#//api/name/avAssetResourceLoaderDelegate">avAssetResourceLoaderDelegate</a> 속성에 반드시 유효한 객체가 설정되어야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/downloadedFileURLForTask" title="downloadedFileURLForTask"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadedFileURLForTask">&nbsp;&nbsp;downloadedFileURLForTask</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>다운로드된 AVAsset 의 로컬 파일 URL 을 저장하기 위한 NSMutableDictionary</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableDictionary&lt;NSString*NSURL*&gt; *downloadedFileURLForTask</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/assetNameForTask" title="assetNameForTask"></a>
+	<h3 class="method-title"><code><a href="#//api/name/assetNameForTask">&nbsp;&nbsp;assetNameForTask</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 이름을 저장하기 위한 NSMutableDictionary</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableDictionary&lt;NSString*NSString*&gt; *assetNameForTask</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selectionDic" title="selectionDic"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selectionDic">&nbsp;&nbsp;selectionDic</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 다운로드 과정에서 필요한 미디어 선택 정보를 저장하기 위한 NSMutableDictionary</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableDictionary&lt;NSString*AVMediaSelection*&gt; *selectionDic</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultResourceLoaderDelegate" title="defaultResourceLoaderDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultResourceLoaderDelegate">&nbsp;&nbsp;defaultResourceLoaderDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAssetResourceLoaderDelegate 구현 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) HNAVAssetResourceLoaderCustomDelegate *defaultResourceLoaderDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/completionHandlerForLaterUse" title="completionHandlerForLaterUse"></a>
+	<h3 class="method-title"><code><a href="#//api/name/completionHandlerForLaterUse">&nbsp;&nbsp;completionHandlerForLaterUse</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>background 에서 진행중이던 작업을 완료하기 위해 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNBackgroundURLSessionCompetionHandlerForLaterUse completionHandlerForLaterUse</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceDownloader.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

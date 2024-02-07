@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNMovieEditor Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/exportErrorBlock">exportErrorBlock</option>
+		
+		<option value="//api/name/exportProgressBlock">exportProgressBlock</option>
+		
+		<option value="//api/name/exportSuccessBlock">exportSuccessBlock</option>
+		
+		<option value="//api/name/progressTimer">progressTimer</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/exportSessionContainsSuitablePresetsForAsset:">- exportSessionContainsSuitablePresetsForAsset:</option>
+		
+		<option value="//api/name/hasDifferentOrientation:">- hasDifferentOrientation:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/notifyEditError:async:">- notifyEditError:async:</option>
+		
+		<option value="//api/name/notifyEditProgress:fileSize:duration:async:">- notifyEditProgress:fileSize:duration:async:</option>
+		
+		<option value="//api/name/notifyEditSuccessWithURL:async:">- notifyEditSuccessWithURL:async:</option>
+		
+		<option value="//api/name/observeValueForKeyPath:ofObject:change:context:">- observeValueForKeyPath:ofObject:change:context:</option>
+		
+		<option value="//api/name/saveToPhotoLibraryAtFileURL:">- saveToPhotoLibraryAtFileURL:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNMovieEditor Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNMovieEditor.h<br />HNMovieEditor.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>동영상 편집 클래스</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exportSessionContainsSuitablePresetsForAsset:" title="exportSessionContainsSuitablePresetsForAsset:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exportSessionContainsSuitablePresetsForAsset:">&ndash;&nbsp;exportSessionContainsSuitablePresetsForAsset:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>동영상 편집시 사용 가능한 Preset name 을 포함하는지 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)exportSessionContainsSuitablePresetsForAsset:(AVAsset *_Nonnull)<em>avAsset</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>avAsset</code></th>
+						<td><p>편집 대상</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>사용 가능한 Preset name 을 포함하고 있다면 YES, 그렇지 않으면 NO</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVAssetExportPresetLowQuality, AVAssetExportPresetMediumQuality, AVAssetExportPresetHighestQuality 중 하나를 포함해야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyEditProgress:fileSize:duration:async:" title="notifyEditProgress:fileSize:duration:async:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyEditProgress:fileSize:duration:async:">&ndash;&nbsp;notifyEditProgress:fileSize:duration:async:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>진행 정보 블럭 호출</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyEditProgress:(NSNumber *_Nullable)<em>progress</em> fileSize:(NSNumber *_Nullable)<em>estimatedFileSize</em> duration:(CMTime)<em>estimatedDuration</em> async:(BOOL)<em>async</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progress</code></th>
+						<td><p>진행 정도</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>estimatedFileSize</code></th>
+						<td><p>파일의 크기</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>estimatedDuration</code></th>
+						<td><p>파일의 재생 시간</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>async</code></th>
+						<td><p>비동기로 호출 결정 (비동기로 호출시 YES, 그렇지 않으면 NO)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyEditError:async:" title="notifyEditError:async:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyEditError:async:">&ndash;&nbsp;notifyEditError:async:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>에러 발생시 블럭 호출</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyEditError:(NSError *_Nullable)<em>error</em> async:(BOOL)<em>async</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>async</code></th>
+						<td><p>비동기로 호출 결정 (비동기로 호출시 YES, 그렇지 않으면 NO)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyEditSuccessWithURL:async:" title="notifyEditSuccessWithURL:async:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyEditSuccessWithURL:async:">&ndash;&nbsp;notifyEditSuccessWithURL:async:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>성공시 블럭 호출</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyEditSuccessWithURL:(NSURL *_Nullable)<em>url</em> async:(BOOL)<em>async</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>async</code></th>
+						<td><p>비동기로 호출 결정 (비동기로 호출시 YES, 그렇지 않으면 NO)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveToPhotoLibraryAtFileURL:" title="saveToPhotoLibraryAtFileURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveToPhotoLibraryAtFileURL:">&ndash;&nbsp;saveToPhotoLibraryAtFileURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>fileURL 에 추출된 동영상 파일을 Photo Library 에 저장</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveToPhotoLibraryAtFileURL:(NSURL *_Nullable)<em>fileURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileURL</code></th>
+						<td><p>AVAssetExportSession 에 의해 추출된 동영상 파일 URL</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>새로운 파일로 저장</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hasDifferentOrientation:" title="hasDifferentOrientation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasDifferentOrientation:">&ndash;&nbsp;hasDifferentOrientation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>다른 회전 상태의 AVAsset 이 있는지 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)hasDifferentOrientation:(NSArray&lt;AVAsset*&gt; *_Nonnull)<em>assets</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>assets</code></th>
+						<td><p>편집 대상 AVAsset 배열</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>다른 회전 상태의 AVAsset 이 있다면 YES, 그렇지 않으면 NO</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/observeValueForKeyPath:ofObject:change:context:" title="observeValueForKeyPath:ofObject:change:context:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/observeValueForKeyPath:ofObject:change:context:">&ndash;&nbsp;observeValueForKeyPath:ofObject:change:context:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)observeValueForKeyPath:(NSString *)<em>keyPath</em> ofObject:(id)<em>object</em> change:(NSDictionary&lt;NSKeyValueChangeKey,id&gt; *)<em>change</em> context:(void *)<em>context</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/exportProgressBlock" title="exportProgressBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exportProgressBlock">&nbsp;&nbsp;exportProgressBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>진행중 호출될 블럭 (main thread 에서 호출됨)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) onMovieExportProgressBlock _Nullable exportProgressBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exportSuccessBlock" title="exportSuccessBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exportSuccessBlock">&nbsp;&nbsp;exportSuccessBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>성공시 호출될 블럭 (main thread 에서 호출됨)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) onMovieExportSuccessBlock _Nullable exportSuccessBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exportErrorBlock" title="exportErrorBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exportErrorBlock">&nbsp;&nbsp;exportErrorBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>에러 발생시 호출될 블럭 (main thread 에서 호출됨)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) onMovieExportErrorBlock _Nullable exportErrorBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/progressTimer" title="progressTimer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/progressTimer">&nbsp;&nbsp;progressTimer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAssetExportSession 의 status 속성에 대한 KVO 과정에서 사용되는 타이머</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) dispatch_source_t progressTimer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieEditor.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

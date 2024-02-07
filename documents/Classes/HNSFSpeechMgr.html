@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNSFSpeechMgr Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/audioActivated">audioActivated</option>
+		
+		<option value="//api/name/audioEngineForRecord">audioEngineForRecord</option>
+		
+		<option value="//api/name/audioInputNode">audioInputNode</option>
+		
+		<option value="//api/name/audioRecordPermission">audioRecordPermission</option>
+		
+		<option value="//api/name/compressedSpeechFileURL">compressedSpeechFileURL</option>
+		
+		<option value="//api/name/convertOperation">convertOperation</option>
+		
+		<option value="//api/name/fftConvertResultBlock">fftConvertResultBlock</option>
+		
+		<option value="//api/name/fftHelper">fftHelper</option>
+		
+		<option value="//api/name/fileWirteSuccessBlock">fileWirteSuccessBlock</option>
+		
+		<option value="//api/name/fileWriteErrorBlock">fileWriteErrorBlock</option>
+		
+		<option value="//api/name/locale">locale</option>
+		
+		<option value="//api/name/originAudioFile">originAudioFile</option>
+		
+		<option value="//api/name/rawSpeechFileURL">rawSpeechFileURL</option>
+		
+		<option value="//api/name/result">result</option>
+		
+		<option value="//api/name/saveSpeechFile">saveSpeechFile</option>
+		
+		<option value="//api/name/speechPowerLevelBlock">speechPowerLevelBlock</option>
+		
+		<option value="//api/name/speechRecognizeAuthStatus">speechRecognizeAuthStatus</option>
+		
+		<option value="//api/name/speechRecognizer">speechRecognizer</option>
+		
+		<option value="//api/name/speechSynthesizer">speechSynthesizer</option>
+		
+		<option value="//api/name/task">task</option>
+		
+		<option value="//api/name/transcriptErrorBlock">transcriptErrorBlock</option>
+		
+		<option value="//api/name/transcriptSuccessBlock">transcriptSuccessBlock</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/getInstance">+ getInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/activateAudioSessionForRecordAndPlay">- activateAudioSessionForRecordAndPlay</option>
+		
+		<option value="//api/name/allSupportedLocales">- allSupportedLocales</option>
+		
+		<option value="//api/name/audioFileConvertOperation:didCompleteWithURL:">- audioFileConvertOperation:didCompleteWithURL:</option>
+		
+		<option value="//api/name/audioFileConvertOperation:didEncounterError:">- audioFileConvertOperation:didEncounterError:</option>
+		
+		<option value="//api/name/getRecordPermission">- getRecordPermission</option>
+		
+		<option value="//api/name/getSpeechRecognizeAuthStatus">- getSpeechRecognizeAuthStatus</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/isListening">- isListening</option>
+		
+		<option value="//api/name/prepareToListen:originVoiceFileURL:compressedVoiceFileURL:locale:">- prepareToListen:originVoiceFileURL:compressedVoiceFileURL:locale:</option>
+		
+		<option value="//api/name/requestRecordPermission:">- requestRecordPermission:</option>
+		
+		<option value="//api/name/requestSpeechRecognizeAuth:">- requestSpeechRecognizeAuth:</option>
+		
+		<option value="//api/name/speak:">- speak:</option>
+		
+		<option value="//api/name/speechRecognitionDidDetectSpeech:">- speechRecognitionDidDetectSpeech:</option>
+		
+		<option value="//api/name/speechRecognitionTask:didFinishRecognition:">- speechRecognitionTask:didFinishRecognition:</option>
+		
+		<option value="//api/name/speechRecognitionTask:didFinishSuccessfully:">- speechRecognitionTask:didFinishSuccessfully:</option>
+		
+		<option value="//api/name/speechRecognitionTask:didHypothesizeTranscription:">- speechRecognitionTask:didHypothesizeTranscription:</option>
+		
+		<option value="//api/name/speechRecognitionTaskFinishedReadingAudio:">- speechRecognitionTaskFinishedReadingAudio:</option>
+		
+		<option value="//api/name/speechRecognitionTaskWasCancelled:">- speechRecognitionTaskWasCancelled:</option>
+		
+		<option value="//api/name/speechRecognizer:availabilityDidChange:">- speechRecognizer:availabilityDidChange:</option>
+		
+		<option value="//api/name/speechSynthesizer:didCancelSpeechUtterance:">- speechSynthesizer:didCancelSpeechUtterance:</option>
+		
+		<option value="//api/name/speechSynthesizer:didContinueSpeechUtterance:">- speechSynthesizer:didContinueSpeechUtterance:</option>
+		
+		<option value="//api/name/speechSynthesizer:didFinishSpeechUtterance:">- speechSynthesizer:didFinishSpeechUtterance:</option>
+		
+		<option value="//api/name/speechSynthesizer:didPauseSpeechUtterance:">- speechSynthesizer:didPauseSpeechUtterance:</option>
+		
+		<option value="//api/name/speechSynthesizer:didStartSpeechUtterance:">- speechSynthesizer:didStartSpeechUtterance:</option>
+		
+		<option value="//api/name/speechSynthesizer:willSpeakRangeOfSpeechString:utterance:">- speechSynthesizer:willSpeakRangeOfSpeechString:utterance:</option>
+		
+		<option value="//api/name/startListen">- startListen</option>
+		
+		<option value="//api/name/stopListen">- stopListen</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNSFSpeechMgr Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>AVSpeechSynthesizerDelegate<br /><a href="../Protocols/AudioFileConvertOperationDelegate.html">AudioFileConvertOperationDelegate</a><br />SFSpeechRecognitionTaskDelegate<br />SFSpeechRecognizerDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNSFSpeechMgr.h<br />HNSFSpeechMgr.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>단말기의 마이크를 이용하여 사용자의 음성 데이터를 녹음하고 녹음된 음성 데이터에 대한 문자열 추출을 담당하는 클래스</p><p>이 클래스가 정상적으로 동작하기 위해서는 앱의 Info.plist 에 NSSpeechRecognitionUsageDescription, NSMicrophoneUsageDescription 키와 키에 대한 안내 문자열이 정의되어야 함.</p>
+
+<p>또한, 이 클래스는 iOS 10.0 부터 지원됨.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/saveSpeechFile" title="saveSpeechFile"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveSpeechFile">&nbsp;&nbsp;saveSpeechFile</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터를 파일로 저장할 지 결정, YES 일 경우 파일로 저장</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL saveSpeechFile</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>기본값은 NO</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rawSpeechFileURL" title="rawSpeechFileURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rawSpeechFileURL">&nbsp;&nbsp;rawSpeechFileURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터 파일 URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSURL *rawSpeechFileURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVAudioPCMFormatFloat32, 44100khz, mono(1 channel) 을 이용하여 파일이 생성되며, .pcm 확장자를 사용해야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/compressedSpeechFileURL" title="compressedSpeechFileURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/compressedSpeechFileURL">&nbsp;&nbsp;compressedSpeechFileURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>압축된 사용자의 음성 데이터 파일 URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSURL *compressedSpeechFileURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>kAudioFormatMPEG4AAC 를 사용하여 파일이 생성되며 .mp3 확장자를 사용해야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/locale" title="locale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/locale">&nbsp;&nbsp;locale</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터에 대한 언어 설정</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSLocale *locale</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>입력된 음성 데이터와 언어 설정값이 다르면 문자열 추출이 정상적으로 이루어지지 않을 수 있음, 기본값은 [NSLocale currentLocale]</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transcriptSuccessBlock" title="transcriptSuccessBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transcriptSuccessBlock">&nbsp;&nbsp;transcriptSuccessBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>음성 데이터 분석 결과를 처리할 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNSFSpeechTranscriptionSuccessBlock _Nullable transcriptSuccessBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transcriptErrorBlock" title="transcriptErrorBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transcriptErrorBlock">&nbsp;&nbsp;transcriptErrorBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>음성 데이터 분석중 발생한 에러 처리 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNSFSpeechTranscriptionErrorBlock _Nullable transcriptErrorBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fileWirteSuccessBlock" title="fileWirteSuccessBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileWirteSuccessBlock">&nbsp;&nbsp;fileWirteSuccessBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터를 파일로 저장 성공시 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNSFSpeechFileWriteSuccessBlock _Nullable fileWirteSuccessBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fileWriteErrorBlock" title="fileWriteErrorBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileWriteErrorBlock">&nbsp;&nbsp;fileWriteErrorBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터를 파일로 저장 실패시 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNSFSpeechFileWriteErrorBlock _Nullable fileWriteErrorBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechPowerLevelBlock" title="speechPowerLevelBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechPowerLevelBlock">&nbsp;&nbsp;speechPowerLevelBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 크기 정보를 처리할 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNSFSpeechPowerLevelBlock _Nullable speechPowerLevelBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fftConvertResultBlock" title="fftConvertResultBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fftConvertResultBlock">&nbsp;&nbsp;fftConvertResultBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>고속 퓨리에 변환 결과를 처리할 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNSFSpeechFFTConvertResultBlock _Nullable fftConvertResultBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInstance" title="getInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInstance">+&nbsp;getInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (_Nullable instancetype)getInstance</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSpeechRecognizeAuthStatus" title="getSpeechRecognizeAuthStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSpeechRecognizeAuthStatus">&ndash;&nbsp;getSpeechRecognizeAuthStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터 사용을 위한 권한 획득 상태 리턴</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (SFSpeechRecognizerAuthorizationStatus)getSpeechRecognizeAuthStatus</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>SFSpeechRecognizerAuthorizationStatus</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRecordPermission" title="getRecordPermission"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRecordPermission">&ndash;&nbsp;getRecordPermission</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>녹음을 위한 권한 획득 상태 리턴</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AVAudioSessionRecordPermission)getRecordPermission</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVAudioSessionRecordPermission</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSpeechRecognizeAuth:" title="requestSpeechRecognizeAuth:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSpeechRecognizeAuth:">&ndash;&nbsp;requestSpeechRecognizeAuth:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터 사용을 위한 권한 획득 시도</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestSpeechRecognizeAuth:(HNSFSpeechRecognizeAuthResultBlock _Nonnull)<em>resultBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resultBlock</code></th>
+						<td><p>권한 획득 결과를 처리할 블럭, main thread 에서 호출됨</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestRecordPermission:" title="requestRecordPermission:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestRecordPermission:">&ndash;&nbsp;requestRecordPermission:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>녹음 권한 획득 시도</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestRecordPermission:(HNSFSpeechRecordPermissionResultBlock _Nonnull)<em>resultBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resultBlock</code></th>
+						<td><p>권한 획득 결과를 처리할 블럭, main thread 에서 호출됨</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prepareToListen:originVoiceFileURL:compressedVoiceFileURL:locale:" title="prepareToListen:originVoiceFileURL:compressedVoiceFileURL:locale:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prepareToListen:originVoiceFileURL:compressedVoiceFileURL:locale:">&ndash;&nbsp;prepareToListen:originVoiceFileURL:compressedVoiceFileURL:locale:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터 분석을 위한 준비</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)prepareToListen:(BOOL)<em>saveVoiceFile</em> originVoiceFileURL:(NSURL *_Nonnull)<em>originVoiceFileURL</em> compressedVoiceFileURL:(NSURL *_Nonnull)<em>compressedVoiceFileURL</em> locale:(NSLocale *_Nullable)<em>locale</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>saveVoiceFile</code></th>
+						<td><p>사용자의 음성 데이터를 파일로 저장할 지 결정, 저장하려면 YES, 그렇지 않으면 NO</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>originVoiceFileURL</code></th>
+						<td><p>사용자의 음성 데이터 파일 URL, AVAudioPCMFormatFloat32, 44100khz, mono(1 channel) 을 이용하여 파일이 생성되며, .pcm 확장자를 사용해야 함</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>compressedVoiceFileURL</code></th>
+						<td><p>사용자의 음성 데이터 파일 URL (압축 포맷), kAudioFormatMPEG4AAC 를 사용하여 파일이 생성되며 .mp3 확장자를 사용해야 함</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locale</code></th>
+						<td><p>언어 설정, nil 전달할 경우 [NSLocale currentLocale] 사용</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>[HNSFSpeechMgr listenUserSpeech] 메소드 실행 전 반드시 한 번은 실행되어야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startListen" title="startListen"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startListen">&ndash;&nbsp;startListen</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터 분석 시작</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)startListen</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVAudioEngine 이 성공적으로 시작했다면 YES, 그렇지 않으면 NO</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 메소드가 호출되기 전에 반드시 <a href="#//api/name/prepareToListen:originVoiceFileURL:compressedVoiceFileURL:locale:">[HNSFSpeechMgr prepareToListen:originVoiceFileURL:compressedVoiceFileURL:locale:]</a> 메소드를 한 번은 호출해야 함.</p>
+
+<p>또한, 분석을 종료하려면 <a href="#//api/name/stopListen">[HNSFSpeechMgr stopListen]</a> 메소드를 호출해야 함.</p>
+
+<p>음성 인식을 위해 주어지는 시간은 1분 정도이므로 UI 에 적절한 표시가 필요함.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isListening" title="isListening"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isListening">&ndash;&nbsp;isListening</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터 분석 상태 리턴</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isListening</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>분석중일 경우 YES, 그렇지 않으면 NO</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopListen" title="stopListen"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopListen">&ndash;&nbsp;stopListen</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>사용자의 음성 데이터 분석 종료</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopListen</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speak:" title="speak:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speak:">&ndash;&nbsp;speak:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>단말기에서 제공하는 기계 음성을 이용하여 문자열을 음성으로 출력</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)speak:(NSString *_Nonnull)<em>string</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>음성으로 출력할 문자열</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allSupportedLocales" title="allSupportedLocales"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allSupportedLocales">&ndash;&nbsp;allSupportedLocales</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>[SFSpeechRecognizer supportedLocales] 리턴</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSSet&lt;NSLocale*&gt; *_Nullable)allSupportedLocales</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSSet<NSLocale *></p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNSFSpeechMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechRecognizer:availabilityDidChange:" title="speechRecognizer:availabilityDidChange:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognizer:availabilityDidChange:">&ndash;&nbsp;speechRecognizer:availabilityDidChange:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechRecognizer:(SFSpeechRecognizer *)<em>speechRecognizer</em> availabilityDidChange:(BOOL)<em>available</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechRecognitionDidDetectSpeech:" title="speechRecognitionDidDetectSpeech:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognitionDidDetectSpeech:">&ndash;&nbsp;speechRecognitionDidDetectSpeech:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechRecognitionDidDetectSpeech:(SFSpeechRecognitionTask *)<em>task</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechRecognitionTask:didHypothesizeTranscription:" title="speechRecognitionTask:didHypothesizeTranscription:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognitionTask:didHypothesizeTranscription:">&ndash;&nbsp;speechRecognitionTask:didHypothesizeTranscription:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)<em>task</em> didHypothesizeTranscription:(SFTranscription *)<em>transcription</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechRecognitionTask:didFinishRecognition:" title="speechRecognitionTask:didFinishRecognition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognitionTask:didFinishRecognition:">&ndash;&nbsp;speechRecognitionTask:didFinishRecognition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)<em>task</em> didFinishRecognition:(SFSpeechRecognitionResult *)<em>recognitionResult</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechRecognitionTaskFinishedReadingAudio:" title="speechRecognitionTaskFinishedReadingAudio:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognitionTaskFinishedReadingAudio:">&ndash;&nbsp;speechRecognitionTaskFinishedReadingAudio:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechRecognitionTaskFinishedReadingAudio:(SFSpeechRecognitionTask *)<em>task</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechRecognitionTaskWasCancelled:" title="speechRecognitionTaskWasCancelled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognitionTaskWasCancelled:">&ndash;&nbsp;speechRecognitionTaskWasCancelled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechRecognitionTaskWasCancelled:(SFSpeechRecognitionTask *)<em>task</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechRecognitionTask:didFinishSuccessfully:" title="speechRecognitionTask:didFinishSuccessfully:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognitionTask:didFinishSuccessfully:">&ndash;&nbsp;speechRecognitionTask:didFinishSuccessfully:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechRecognitionTask:(SFSpeechRecognitionTask *)<em>task</em> didFinishSuccessfully:(BOOL)<em>successfully</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechSynthesizer:didCancelSpeechUtterance:" title="speechSynthesizer:didCancelSpeechUtterance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechSynthesizer:didCancelSpeechUtterance:">&ndash;&nbsp;speechSynthesizer:didCancelSpeechUtterance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechSynthesizer:(AVSpeechSynthesizer *)<em>synthesizer</em> didCancelSpeechUtterance:(AVSpeechUtterance *)<em>utterance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechSynthesizer:didContinueSpeechUtterance:" title="speechSynthesizer:didContinueSpeechUtterance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechSynthesizer:didContinueSpeechUtterance:">&ndash;&nbsp;speechSynthesizer:didContinueSpeechUtterance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechSynthesizer:(AVSpeechSynthesizer *)<em>synthesizer</em> didContinueSpeechUtterance:(AVSpeechUtterance *)<em>utterance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechSynthesizer:didFinishSpeechUtterance:" title="speechSynthesizer:didFinishSpeechUtterance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechSynthesizer:didFinishSpeechUtterance:">&ndash;&nbsp;speechSynthesizer:didFinishSpeechUtterance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechSynthesizer:(AVSpeechSynthesizer *)<em>synthesizer</em> didFinishSpeechUtterance:(AVSpeechUtterance *)<em>utterance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechSynthesizer:didPauseSpeechUtterance:" title="speechSynthesizer:didPauseSpeechUtterance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechSynthesizer:didPauseSpeechUtterance:">&ndash;&nbsp;speechSynthesizer:didPauseSpeechUtterance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechSynthesizer:(AVSpeechSynthesizer *)<em>synthesizer</em> didPauseSpeechUtterance:(AVSpeechUtterance *)<em>utterance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechSynthesizer:didStartSpeechUtterance:" title="speechSynthesizer:didStartSpeechUtterance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechSynthesizer:didStartSpeechUtterance:">&ndash;&nbsp;speechSynthesizer:didStartSpeechUtterance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechSynthesizer:(AVSpeechSynthesizer *)<em>synthesizer</em> didStartSpeechUtterance:(AVSpeechUtterance *)<em>utterance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechSynthesizer:willSpeakRangeOfSpeechString:utterance:" title="speechSynthesizer:willSpeakRangeOfSpeechString:utterance:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechSynthesizer:willSpeakRangeOfSpeechString:utterance:">&ndash;&nbsp;speechSynthesizer:willSpeakRangeOfSpeechString:utterance:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)speechSynthesizer:(AVSpeechSynthesizer *)<em>synthesizer</em> willSpeakRangeOfSpeechString:(NSRange)<em>characterRange</em> utterance:(AVSpeechUtterance *)<em>utterance</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioFileConvertOperation:didCompleteWithURL:" title="audioFileConvertOperation:didCompleteWithURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioFileConvertOperation:didCompleteWithURL:">&ndash;&nbsp;audioFileConvertOperation:didCompleteWithURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>음성 파일 변환이 완료되었을 때 호출되는 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)audioFileConvertOperation:(AudioFileConvertOperation *)<em>audioFileConvertOperation</em> didCompleteWithURL:(NSURL *)<em>destinationURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioFileConvertOperation</code></th>
+						<td><p>음성 파일 변환 작업 객체</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>destinationURL</code></th>
+						<td><p>변환된 로컬 파일 URL</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AudioFileConvertOperationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioFileConvertOperation:didEncounterError:" title="audioFileConvertOperation:didEncounterError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioFileConvertOperation:didEncounterError:">&ndash;&nbsp;audioFileConvertOperation:didEncounterError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>음성 파일 변환 과정에서 에러가 발생했을 때 호출되는 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)audioFileConvertOperation:(AudioFileConvertOperation *)<em>audioFileConvertOperation</em> didEncounterError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioFileConvertOperation</code></th>
+						<td><p>음성 파일 변환 작업 객체</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AudioFileConvertOperationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/activateAudioSessionForRecordAndPlay" title="activateAudioSessionForRecordAndPlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/activateAudioSessionForRecordAndPlay">&ndash;&nbsp;activateAudioSessionForRecordAndPlay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)activateAudioSessionForRecordAndPlay</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/speechRecognizeAuthStatus" title="speechRecognizeAuthStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognizeAuthStatus">&nbsp;&nbsp;speechRecognizeAuthStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) SFSpeechRecognizerAuthorizationStatus speechRecognizeAuthStatus</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioRecordPermission" title="audioRecordPermission"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioRecordPermission">&nbsp;&nbsp;audioRecordPermission</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) AVAudioSessionRecordPermission audioRecordPermission</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/originAudioFile" title="originAudioFile"></a>
+	<h3 class="method-title"><code><a href="#//api/name/originAudioFile">&nbsp;&nbsp;originAudioFile</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AVAudioFile *originAudioFile</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioEngineForRecord" title="audioEngineForRecord"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioEngineForRecord">&nbsp;&nbsp;audioEngineForRecord</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AVAudioEngine *audioEngineForRecord</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioInputNode" title="audioInputNode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioInputNode">&nbsp;&nbsp;audioInputNode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AVAudioNode *audioInputNode</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/task" title="task"></a>
+	<h3 class="method-title"><code><a href="#//api/name/task">&nbsp;&nbsp;task</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) SFSpeechRecognitionTask *task</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/result" title="result"></a>
+	<h3 class="method-title"><code><a href="#//api/name/result">&nbsp;&nbsp;result</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) SFSpeechRecognitionResult *result</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/convertOperation" title="convertOperation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/convertOperation">&nbsp;&nbsp;convertOperation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AudioFileConvertOperation *convertOperation</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/audioActivated" title="audioActivated"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioActivated">&nbsp;&nbsp;audioActivated</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL audioActivated</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechRecognizer" title="speechRecognizer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechRecognizer">&nbsp;&nbsp;speechRecognizer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) SFSpeechRecognizer *speechRecognizer</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speechSynthesizer" title="speechSynthesizer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speechSynthesizer">&nbsp;&nbsp;speechSynthesizer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AVSpeechSynthesizer *speechSynthesizer</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fftHelper" title="fftHelper"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fftHelper">&nbsp;&nbsp;fftHelper</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) HNSFAudioBufferFFTHelper *fftHelper</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

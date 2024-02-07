@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNAVAssetCommonViewController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/credentialUserID">credentialUserID</option>
+		
+		<option value="//api/name/credentialUserPW">credentialUserPW</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/URLSession:task:didReceiveChallenge:completionHandler:">- URLSession:task:didReceiveChallenge:completionHandler:</option>
+		
+		<option value="//api/name/applyCredentialWithAuthenticationChallenge:completionBlock:">- applyCredentialWithAuthenticationChallenge:completionBlock:</option>
+		
+		<option value="//api/name/didReceiveMemoryWarning">- didReceiveMemoryWarning</option>
+		
+		<option value="//api/name/getAuthenticateChallengeBlock">- getAuthenticateChallengeBlock</option>
+		
+		<option value="//api/name/getRenewalLoadingRequestBlock">- getRenewalLoadingRequestBlock</option>
+		
+		<option value="//api/name/getResourceLoadingRequestBlock">- getResourceLoadingRequestBlock</option>
+		
+		<option value="//api/name/textField:shouldChangeCharactersInRange:replacementString:">- textField:shouldChangeCharactersInRange:replacementString:</option>
+		
+		<option value="//api/name/textFieldDidEndEditing:">- textFieldDidEndEditing:</option>
+		
+		<option value="//api/name/viewDidLoad">- viewDidLoad</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNAVAssetCommonViewController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIViewController</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/HNAVAssetAdditionalResourceLoadingProtocol.html">HNAVAssetAdditionalResourceLoadingProtocol</a><br /><a href="../Protocols/HNAVAssetAuthenticateProtocol.html">HNAVAssetAuthenticateProtocol</a><br />NSURLSessionTaskDelegate<br />UITextFieldDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNAVAssetCommonViewController.h<br />HNAVAssetCommonViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Http Digest 인증 처리를 진행하며
+AVURLAsset 로딩 과정에서 추가적인 리소스 로딩을 진행</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/applyCredentialWithAuthenticationChallenge:completionBlock:" title="applyCredentialWithAuthenticationChallenge:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/applyCredentialWithAuthenticationChallenge:completionBlock:">&ndash;&nbsp;applyCredentialWithAuthenticationChallenge:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>인증 정보 제공 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)applyCredentialWithAuthenticationChallenge:(NSURLAuthenticationChallenge *_Nonnull)<em>challenge</em> completionBlock:(void ( ^ _Nullable ) ( NSURLSessionAuthChallengeDisposition disposition , NSURLCredential *_Nullable credential ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>challenge</code></th>
+						<td><p>NSURLAuthenticationChallenge 객체</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>인증 정보 제공 완료시 호출해야 하는 블럭</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>challenge.protectionSpace.authenticationMethod 의 타입이</p>
+
+<p>NSURLAuthenticationMethodDefault,</p>
+
+<p>NSURLAuthenticationMethodHTTPBasic,</p>
+
+<p>NSURLAuthenticationMethodHTTPDigest 일 경우</p>
+
+<p>사용자가 입력한 인증 정보를 서버로 전송하도록 구현되었음.</p>
+
+<p>위 경우를 제외한 나머지 타입에 대한 처리가 필요할 경우 재정의 할 것.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetAuthenticateProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAuthenticateChallengeBlock" title="getAuthenticateChallengeBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAuthenticateChallengeBlock">&ndash;&nbsp;getAuthenticateChallengeBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>     UIAlertController 를 이용하여 사용자가 입력한 인증 정보를 서버로 전송
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (HNAVAssetNSURLAuthenticationChallengeBlock _Nonnull)getAuthenticateChallengeBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetCommonViewController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getResourceLoadingRequestBlock" title="getResourceLoadingRequestBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getResourceLoadingRequestBlock">&ndash;&nbsp;getResourceLoadingRequestBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 로딩 과정에서 추가적으로 로딩이 필요한 리소스를 제공하는 블럭 구현</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (HNAVAssetResourceLoadingRequestBlock _Nonnull)getResourceLoadingRequestBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetAdditionalResourceLoadingProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRenewalLoadingRequestBlock" title="getRenewalLoadingRequestBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRenewalLoadingRequestBlock">&ndash;&nbsp;getRenewalLoadingRequestBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>                                                                         추가적인 리소스 다운로드가 완료되었다면 파일 로드
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (HNAVAssetResourceRenewalLoadingRequestBlock _Nonnull)getRenewalLoadingRequestBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetCommonViewController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didReceiveMemoryWarning" title="didReceiveMemoryWarning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceiveMemoryWarning">&ndash;&nbsp;didReceiveMemoryWarning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)didReceiveMemoryWarning</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/textFieldDidEndEditing:" title="textFieldDidEndEditing:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/textFieldDidEndEditing:">&ndash;&nbsp;textFieldDidEndEditing:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)textFieldDidEndEditing:(UITextField *)<em>textField</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/textField:shouldChangeCharactersInRange:replacementString:" title="textField:shouldChangeCharactersInRange:replacementString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/textField:shouldChangeCharactersInRange:replacementString:">&ndash;&nbsp;textField:shouldChangeCharactersInRange:replacementString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)textField:(UITextField *)<em>textField</em> shouldChangeCharactersInRange:(NSRange)<em>range</em> replacementString:(NSString *)<em>string</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:task:didReceiveChallenge:completionHandler:" title="URLSession:task:didReceiveChallenge:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:task:didReceiveChallenge:completionHandler:">&ndash;&nbsp;URLSession:task:didReceiveChallenge:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> task:(NSURLSessionTask *)<em>task</em> didReceiveChallenge:(NSURLAuthenticationChallenge *)<em>challenge</em> completionHandler:(void ( ^ ) ( NSURLSessionAuthChallengeDisposition disposition , NSURLCredential *_Nullable credential ))<em>completionHandler</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/credentialUserID" title="credentialUserID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/credentialUserID">&nbsp;&nbsp;credentialUserID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Http Digest 를 통한 인증에 사용될 아이디</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *credentialUserID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetCommonViewController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/credentialUserPW" title="credentialUserPW"></a>
+	<h3 class="method-title"><code><a href="#//api/name/credentialUserPW">&nbsp;&nbsp;credentialUserPW</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Http Digest 를 통한 인증에 사용될 비밀번호</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *credentialUserPW</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetCommonViewController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ViewControllerTransitionHelper Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/dismiss">dismiss</option>
+		
+		<option value="//api/name/isCancelled">isCancelled</option>
+		
+		<option value="//api/name/percent">percent</option>
+		
+		<option value="//api/name/percentDismiss">percentDismiss</option>
+		
+		<option value="//api/name/percentPresent">percentPresent</option>
+		
+		<option value="//api/name/present">present</option>
+		
+		<option value="//api/name/transitionContext">transitionContext</option>
+		
+		<option value="//api/name/transitionDirection">transitionDirection</option>
+		
+		<option value="//api/name/viewTransitionState">viewTransitionState</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/animateTransition:">- animateTransition:</option>
+		
+		<option value="//api/name/defaultCompletion:">- defaultCompletion:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/transitionDuration:">- transitionDuration:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ViewControllerTransitionHelper Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>UIViewControllerAnimatedTransitioning</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ViewControllerTransitionHelper.h<br />ViewControllerTransitionHelper.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Helper class which implements UIViewControllerAnimatedTransitioning</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/transitionDirection" title="transitionDirection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transitionDirection">&nbsp;&nbsp;transitionDirection</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current direction of the transition, default is no transition</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) HNTransitionDirection transitionDirection</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewTransitionState" title="viewTransitionState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewTransitionState">&nbsp;&nbsp;viewTransitionState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Handles placing transitioning view controllers' views in transitionContext&rsquo;s containerView and performing the actual animation using transitionPresent, transitionDismiss, transitionPercentPresent and transitionPercentDismiss depending on the transitionState using the current <a href="#//api/name/transitionDirection">transitionDirection</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) ViewTransitionState *viewTransitionState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) id&lt;UIViewControllerAnimatedTransitioning&gt; delegate</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transitionContext" title="transitionContext"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transitionContext">&nbsp;&nbsp;transitionContext</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Transition context provided by either simple or interactive transitioning <a href="#//api/name/delegate">delegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) id&lt;UIViewControllerContextTransitioning&gt; transitionContext</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/percent" title="percent"></a>
+	<h3 class="method-title"><code><a href="#//api/name/percent">&nbsp;&nbsp;percent</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Handy var to get the percentage value of the transition state
+nil if the transition is Simple</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat percent</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isCancelled" title="isCancelled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isCancelled">&nbsp;&nbsp;isCancelled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL isCancelled</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/present" title="present"></a>
+	<h3 class="method-title"><code><a href="#//api/name/present">&nbsp;&nbsp;present</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Default closure for handling prensentation transition animation with similar transition to iOS cover vertical transition style.
+This will be overriden by the user of the owner class, <a href="../Classes/SimpleTransitioningDelegate.html">SimpleTransitioningDelegate</a> or <a href="../Classes/InteractiveTransitioningDelegate.html">InteractiveTransitioningDelegate</a> for custom animation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) TransitionPresent present</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dismiss" title="dismiss"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dismiss">&nbsp;&nbsp;dismiss</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Default closure for handling dismiss transition animation with similar transition to iOS cover vertical transition style.
+This will be overriden by the user of the owner class, <a href="../Classes/SimpleTransitioningDelegate.html">SimpleTransitioningDelegate</a> or <a href="../Classes/InteractiveTransitioningDelegate.html">InteractiveTransitioningDelegate</a> for custom animation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) TransitionDismiss dismiss</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/percentPresent" title="percentPresent"></a>
+	<h3 class="method-title"><code><a href="#//api/name/percentPresent">&nbsp;&nbsp;percentPresent</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Default closure for handling presentation transition percentage change.
+This will be overriden by the user of the owner class, <a href="../Classes/InteractiveTransitioningDelegate.html">InteractiveTransitioningDelegate</a> for custom animation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) TransitionPercentPresent percentPresent</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/percentDismiss" title="percentDismiss"></a>
+	<h3 class="method-title"><code><a href="#//api/name/percentDismiss">&nbsp;&nbsp;percentDismiss</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Default closure for handling dismissal transition percentage change.
+This will be overriden by the user of the owner class, <a href="../Classes/InteractiveTransitioningDelegate.html">InteractiveTransitioningDelegate</a> for custom animation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) TransitionPercentDismiss percentDismiss</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultCompletion:" title="defaultCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultCompletion:">&ndash;&nbsp;defaultCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>애니메이션 동작의 종료에 실행되는 완료 블록</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (OnTransitionBlock)defaultCompletion:(BOOL)<em>isInteractive</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/animateTransition:" title="animateTransition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/animateTransition:">&ndash;&nbsp;animateTransition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is used by <a href="../Classes/SimpleTransitioningDelegate.html">SimpleTransitioningDelegate</a> as in the protocol implementation. On the other hand, setting <a href="#//api/name/transitionContext">transitionContext</a> and calling setTransitionState is manually handled by <a href="../Classes/InteractiveTransitioningDelegate.html">InteractiveTransitioningDelegate</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)animateTransition:(nonnull id&lt;UIViewControllerContextTransitioning&gt;)<em>transitionContext</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transitionDuration:" title="transitionDuration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transitionDuration:">&ndash;&nbsp;transitionDuration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is ignored, since the actual transition duration is specified in transition callback closures provided by transitioningDelegate classes</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)transitionDuration:(nullable id&lt;UIViewControllerContextTransitioning&gt;)<em>transitionContext</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ViewControllerTransitionHelper.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

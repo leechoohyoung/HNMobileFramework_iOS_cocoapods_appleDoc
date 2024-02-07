@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNMovieTrimmer Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/sessionForTrimWithAVAsset:outputURL:timeRange:">- sessionForTrimWithAVAsset:outputURL:timeRange:</option>
+		
+		<option value="//api/name/trimAVAsset:exportURL:saveTo:overwrite:timeRange:">- trimAVAsset:exportURL:saveTo:overwrite:timeRange:</option>
+		
+		<option value="//api/name/trimAVAsset:exportURL:saveTo:overwrite:timeRange:editProgressBlock:editSuccessBlock:editErrorBlock:">- trimAVAsset:exportURL:saveTo:overwrite:timeRange:editProgressBlock:editSuccessBlock:editErrorBlock:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNMovieTrimmer Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/HNMovieEditor.html">HNMovieEditor</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNMovieTrimmer.h<br />HNMovieTrimmer.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>동영상 잘라내기 기능 제공 클래스</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trimAVAsset:exportURL:saveTo:overwrite:timeRange:" title="trimAVAsset:exportURL:saveTo:overwrite:timeRange:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trimAVAsset:exportURL:saveTo:overwrite:timeRange:">&ndash;&nbsp;trimAVAsset:exportURL:saveTo:overwrite:timeRange:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>동영상 잘라내기 후 Photo Library 에 저장</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trimAVAsset:(AVAsset *_Nonnull)<em>avAsset</em> exportURL:(NSURL *_Nonnull)<em>exportURL</em> saveTo:(PHAsset *_Nonnull)<em>phAsset</em> overwrite:(BOOL)<em>overwrite</em> timeRange:(CMTimeRange)<em>timeRange</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>avAsset</code></th>
+						<td><p>잘라내기 대상 AVAsset</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>exportURL</code></th>
+						<td><p>추출될 파일 URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phAsset</code></th>
+						<td><p>Photo Library 에 저장된 원본</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overwrite</code></th>
+						<td><p>원본 파일을 덮어쓰기 (덮어쓰기 할 경우 YES, 그렇지 않으면 NO)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeRange</code></th>
+						<td><p>편집 구간</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>내부 동작은 비동기로 진행됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimmer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trimAVAsset:exportURL:saveTo:overwrite:timeRange:editProgressBlock:editSuccessBlock:editErrorBlock:" title="trimAVAsset:exportURL:saveTo:overwrite:timeRange:editProgressBlock:editSuccessBlock:editErrorBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trimAVAsset:exportURL:saveTo:overwrite:timeRange:editProgressBlock:editSuccessBlock:editErrorBlock:">&ndash;&nbsp;trimAVAsset:exportURL:saveTo:overwrite:timeRange:editProgressBlock:editSuccessBlock:editErrorBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>동영상 잘라내기 후 Photo Library 에 저장</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trimAVAsset:(AVAsset *_Nonnull)<em>avAsset</em> exportURL:(NSURL *_Nonnull)<em>exportURL</em> saveTo:(PHAsset *_Nonnull)<em>phAsset</em> overwrite:(BOOL)<em>overwrite</em> timeRange:(CMTimeRange)<em>timeRange</em> editProgressBlock:(onMovieExportProgressBlock _Nonnull)<em>editProgressBlock</em> editSuccessBlock:(onMovieExportSuccessBlock _Nonnull)<em>editSuccessBlock</em> editErrorBlock:(onMovieExportErrorBlock _Nonnull)<em>editErrorBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>avAsset</code></th>
+						<td><p>잘라내기 대상 AVAsset</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>exportURL</code></th>
+						<td><p>추출될 파일 URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phAsset</code></th>
+						<td><p>Photo Library 에 저장된 원본</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overwrite</code></th>
+						<td><p>원본 파일을 덮어쓰기 (덮어쓰기 할 경우 YES, 그렇지 않으면 NO)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeRange</code></th>
+						<td><p>편집 구간</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>editProgressBlock</code></th>
+						<td><p>진행중 호출될 블럭 (main thread 에서 호출됨)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>editSuccessBlock</code></th>
+						<td><p>성공시 호출될 블럭 (main thread 에서 호출됨)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>editErrorBlock</code></th>
+						<td><p>에러 발생시 호출될 블럭 (main thread 에서 호출됨)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>내부 동작은 비동기로 진행됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMovieTrimmer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionForTrimWithAVAsset:outputURL:timeRange:" title="sessionForTrimWithAVAsset:outputURL:timeRange:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionForTrimWithAVAsset:outputURL:timeRange:">&ndash;&nbsp;sessionForTrimWithAVAsset:outputURL:timeRange:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (AVAssetExportSession *)sessionForTrimWithAVAsset:(AVAsset *)<em>avAsset</em> outputURL:(NSURL *)<em>outputURL</em> timeRange:(CMTimeRange)<em>timeRange</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

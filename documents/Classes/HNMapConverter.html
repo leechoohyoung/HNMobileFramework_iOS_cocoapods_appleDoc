@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNMapConverter Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/serialQueue">serialQueue</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/extractKeyPairWithParentKey:subArray:">- extractKeyPairWithParentKey:subArray:</option>
+		
+		<option value="//api/name/extractKeyPairWithParentKey:subMap:">- extractKeyPairWithParentKey:subMap:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/singleMapWithNestedMap:callBack:">- singleMapWithNestedMap:callBack:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNMapConverter Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNMapConverter.h<br />HNMapConverter.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>NSDictionary 의 구조를 변환하는 클래스</p><p>내부적으로 재귀함수를 호출하는 구조이므로 중첩 횟수가 너무 커지면 stack over flow 발생할 수 있으므로 너무 깊은 자료구조를 변환하지 않도록 주의할 것</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/singleMapWithNestedMap:callBack:" title="singleMapWithNestedMap:callBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/singleMapWithNestedMap:callBack:">&ndash;&nbsp;singleMapWithNestedMap:callBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>하위 NSDictionary 를 포함하는 NSDictionary 를 단일 NSDictionary 로 변환</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)singleMapWithNestedMap:(NSDictionary *_Nonnull)<em>nestedMap</em> callBack:(NSObject&lt;HNMapConvertCallBack&gt; *_Nonnull)<em>callBack</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nestedMap</code></th>
+						<td><p>하위 NSDictionary 를 포함하는 NSDictionary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callBack</code></th>
+						<td><p><a href="../Protocols/HNMapConvertCallBack.html">HNMapConvertCallBack</a> 구현 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>각 하위 NSDictionary 들은 구두점을 기준으로 연결됨.</p>
+
+<p>예를 들어,</p>
+
+<p>NSDictionary *nestedDic = @{@&ldquo;key0&rdquo;:@&ldquo;val0&rdquo;,
+@&ldquo;key1&rdquo;:@{@&ldquo;subKey0&rdquo;:@&ldquo;subVal0&rdquo;,
+@&ldquo;subKey1&rdquo;:@{@&ldquo;subSubKey0&rdquo;:@&ldquo;subSubVal0&rdquo;}},
+@&ldquo;key2&rdquo;:@&ldquo;val2&rdquo;,
+@&ldquo;key3&rdquo;:@{@&ldquo;subKey0&rdquo;:@&ldquo;subVal0&rdquo;,
+@&ldquo;subKey1&rdquo;:@&ldquo;subVal1&rdquo;,
+@&ldquo;subKey2&rdquo;:@&ldquo;subVal2&rdquo;}};</p>
+
+<p>위의 NSDictionary 는 아래와 같이 변형됨.</p>
+
+<p>{
+&ldquo;key0&rdquo; = val0;
+&ldquo;key1.subKey0&rdquo; = subVal0;
+&ldquo;key1.subKey1.subSubKey0&rdquo; = subSubVal0;
+&ldquo;key2&rdquo; = val2;
+&ldquo;key3.subKey0&rdquo; = subVal0;
+&ldquo;key3.subKey1&rdquo; = subVal1;
+&ldquo;key3.subKey2&rdquo; = subVal2;
+}</p>
+
+<p>깊이 우선 탐색으로 작업을 수행함.</p>
+
+<p>callBack 객체의 각 블럭은 main thread 에서 호출됨.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMapConverter.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/extractKeyPairWithParentKey:subArray:" title="extractKeyPairWithParentKey:subArray:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/extractKeyPairWithParentKey:subArray:">&ndash;&nbsp;extractKeyPairWithParentKey:subArray:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)extractKeyPairWithParentKey:(NSString *)<em>parentKey</em> subArray:(NSArray *)<em>subArray</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/extractKeyPairWithParentKey:subMap:" title="extractKeyPairWithParentKey:subMap:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/extractKeyPairWithParentKey:subMap:">&ndash;&nbsp;extractKeyPairWithParentKey:subMap:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code>     재귀 처리
+     https://ihunet.atlassian.net/wiki/spaces/APPDEVELOPERFIELDANDFORUM/pages/211910908/iOS+stack+frame+limit+size
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)extractKeyPairWithParentKey:(NSString *)<em>parentKey</em> subMap:(NSDictionary *)<em>subMap</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMapConverter.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/serialQueue" title="serialQueue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serialQueue">&nbsp;&nbsp;serialQueue</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) dispatch_queue_t serialQueue</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

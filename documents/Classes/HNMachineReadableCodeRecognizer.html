@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNMachineReadableCodeRecognizer Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/captureSession">captureSession</option>
+		
+		<option value="//api/name/deviceInput">deviceInput</option>
+		
+		<option value="//api/name/deviceOutput">deviceOutput</option>
+		
+		<option value="//api/name/readyToRunning">readyToRunning</option>
+		
+		<option value="//api/name/recognizingCompletionBlock">recognizingCompletionBlock</option>
+		
+		<option value="//api/name/recognizingPrepareFailBlock">recognizingPrepareFailBlock</option>
+		
+		<option value="//api/name/recognizingPrepareSuccessBlock">recognizingPrepareSuccessBlock</option>
+		
+		<option value="//api/name/serialQueueForCaptureSession">serialQueueForCaptureSession</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/authorizationStatus">+ authorizationStatus</option>
+		
+		<option value="//api/name/getInstance">+ getInstance</option>
+		
+		<option value="//api/name/requestAccessWithCompleteBlock:">+ requestAccessWithCompleteBlock:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/captureOutput:didOutputMetadataObjects:fromConnection:">- captureOutput:didOutputMetadataObjects:fromConnection:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:">- prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:</option>
+		
+		<option value="//api/name/prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:failBlock:successBlock:">- prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:failBlock:successBlock:</option>
+		
+		<option value="//api/name/running">- running</option>
+		
+		<option value="//api/name/startRecognize">- startRecognize</option>
+		
+		<option value="//api/name/startRecognizeWithCompletionBlock:">- startRecognizeWithCompletionBlock:</option>
+		
+		<option value="//api/name/stopRecognize">- stopRecognize</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNMachineReadableCodeRecognizer Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>AVCaptureMetadataOutputObjectsDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNMachineReadableCodeRecognizer.h<br />HNMachineReadableCodeRecognizer.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>QR 코드 및 바코드 인식 기능이 구현된 클래스</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getInstance" title="getInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInstance">+&nbsp;getInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>생성자</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (_Nullable instancetype)getInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>HNMachineReadableCodeRecognizer</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Singleton</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorizationStatus" title="authorizationStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorizationStatus">+&nbsp;authorizationStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>카메라 사용 권한 획득 상태 리턴</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (AVAuthorizationStatus)authorizationStatus</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVAuthorizationStatus</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestAccessWithCompleteBlock:" title="requestAccessWithCompleteBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestAccessWithCompleteBlock:">+&nbsp;requestAccessWithCompleteBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>카메라 사용 권한 요청</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)requestAccessWithCompleteBlock:(AuthCompletionBlock _Nonnull)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>권한 획득 결과를 처리할 블럭 (main thread) 에서 호출됨</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Info.plist 에 NSCameraUsageDescription 키에 대한 요청 문구 필요함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:" title="prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:">&ndash;&nbsp;prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QR 코드 및 바코드 인식 준비</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)prepareForRecognizeWithCaptureLayer:(AVCaptureVideoPreviewLayer *_Nonnull)<em>captureLayer</em> captureOrientation:(AVCaptureVideoOrientation)<em>captureOrientation</em> captureRect:(CGRect)<em>captureRect</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureLayer</code></th>
+						<td><p>AVCaptureSession 과 연결될 AVCaptureVideoPreviewLayer</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureOrientation</code></th>
+						<td><p>회전 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureRect</code></th>
+						<td><p>UIView 에 투영될 QR 코드 및 바코드 인식 영역</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>내부 동작은 비동기로 동작함.</p>
+
+<p>이 메소드가 호출되기 전, <a href="#//api/name/recognizingPrepareFailBlock">recognizingPrepareFailBlock</a> 과 <a href="#//api/name/recognizingPrepareSuccessBlock">recognizingPrepareSuccessBlock</a> 을 제공해야 함.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/HNMachineReadableCodePreviewView.html">HNMachineReadableCodePreviewView</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:failBlock:successBlock:" title="prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:failBlock:successBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:failBlock:successBlock:">&ndash;&nbsp;prepareForRecognizeWithCaptureLayer:captureOrientation:captureRect:failBlock:successBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QR 코드 및 바코드 인식 준비</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)prepareForRecognizeWithCaptureLayer:(AVCaptureVideoPreviewLayer *_Nonnull)<em>captureLayer</em> captureOrientation:(AVCaptureVideoOrientation)<em>captureOrientation</em> captureRect:(CGRect)<em>captureRect</em> failBlock:(CodeRecognizingPrepareFailBlock _Nonnull)<em>failBlock</em> successBlock:(CodeRecognizingPrepareSuccessBlock _Nonnull)<em>successBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureLayer</code></th>
+						<td><p>AVCaptureSession 과 연결될 AVCaptureVideoPreviewLayer</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureOrientation</code></th>
+						<td><p>회전 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureRect</code></th>
+						<td><p>UIView 에 투영될 QR 코드 및 바코드 인식 영역</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failBlock</code></th>
+						<td><p>준비 실패시 호출될 블럭 (main thread 에서 호출됨)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>successBlock</code></th>
+						<td><p>준비 성공시 호출될 블럭 (main thread 에서 호출됨)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>내부 동작은 비동기로 동작함</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/HNMachineReadableCodePreviewView.html">HNMachineReadableCodePreviewView</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startRecognize" title="startRecognize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRecognize">&ndash;&nbsp;startRecognize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QR 코드 및 바코드 인식 시작</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startRecognize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>내부 동작은 비동기로 동작함.</p>
+
+<p>QR 코드 및 바코드 인식 영역에 여러개의 코드가 존재할 경우 completionBlock 이 한 번 이상 호출될 수 있음.</p>
+
+<p>이 메소드가 호출되기 전, completionBlock 을 제공해야 함.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startRecognizeWithCompletionBlock:" title="startRecognizeWithCompletionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRecognizeWithCompletionBlock:">&ndash;&nbsp;startRecognizeWithCompletionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QR 코드 및 바코드 인식 시작</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startRecognizeWithCompletionBlock:(CodeRecognizingCompletionBlock _Nonnull)<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>QR 코드 및 바코드 인식 완료 후 호출될 블럭 (main thread 에서 호출됨)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>내부 동작은 비동기로 동작함.</p>
+
+<p>QR 코드 및 바코드 인식 영역에 여러개의 코드가 존재할 경우 completionBlock 이 한 번 이상 호출될 수 있음.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopRecognize" title="stopRecognize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopRecognize">&ndash;&nbsp;stopRecognize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QR 코드 및 바코드 인식 중지</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopRecognize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/running" title="running"></a>
+	<h3 class="method-title"><code><a href="#//api/name/running">&ndash;&nbsp;running</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>인식중 상태 (인식 중이라면 YES, 그렇지 않으면 NO)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)running</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/captureOutput:didOutputMetadataObjects:fromConnection:" title="captureOutput:didOutputMetadataObjects:fromConnection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/captureOutput:didOutputMetadataObjects:fromConnection:">&ndash;&nbsp;captureOutput:didOutputMetadataObjects:fromConnection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)captureOutput:(AVCaptureOutput *)<em>output</em> didOutputMetadataObjects:(NSArray&lt;__kindofAVMetadataObject*&gt; *)<em>metadataObjects</em> fromConnection:(AVCaptureConnection *)<em>connection</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/deviceOutput" title="deviceOutput"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceOutput">&nbsp;&nbsp;deviceOutput</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A capture output for processing timed metadata produced by a capture session</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) AVCaptureMetadataOutput *deviceOutput</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readyToRunning" title="readyToRunning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readyToRunning">&nbsp;&nbsp;readyToRunning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>준비 상태 (준비 되었다면 YES, 그렇지 않으면 NO)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL readyToRunning</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recognizingCompletionBlock" title="recognizingCompletionBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recognizingCompletionBlock">&nbsp;&nbsp;recognizingCompletionBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>QR 코드 및 바코드 인식 완료 후 호출될 블럭 (main thread 에서 호출됨)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CodeRecognizingCompletionBlock _Nullable recognizingCompletionBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>한 번 이상 호출될 수 있음</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recognizingPrepareFailBlock" title="recognizingPrepareFailBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recognizingPrepareFailBlock">&nbsp;&nbsp;recognizingPrepareFailBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>준비 실패시 호출될 블럭 (main thread 에서 호출됨)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CodeRecognizingPrepareFailBlock _Nullable recognizingPrepareFailBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recognizingPrepareSuccessBlock" title="recognizingPrepareSuccessBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recognizingPrepareSuccessBlock">&nbsp;&nbsp;recognizingPrepareSuccessBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>준비 성공시 호출될 블럭 (main thread 에서 호출됨)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) CodeRecognizingPrepareSuccessBlock _Nullable recognizingPrepareSuccessBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNMachineReadableCodeRecognizer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/serialQueueForCaptureSession" title="serialQueueForCaptureSession"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serialQueueForCaptureSession">&nbsp;&nbsp;serialQueueForCaptureSession</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readwrite) dispatch_queue_t serialQueueForCaptureSession</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceInput" title="deviceInput"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceInput">&nbsp;&nbsp;deviceInput</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readwrite) AVCaptureDeviceInput *deviceInput</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/captureSession" title="captureSession"></a>
+	<h3 class="method-title"><code><a href="#//api/name/captureSession">&nbsp;&nbsp;captureSession</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readwrite) AVCaptureSession *captureSession</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNPushMgr Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/apnsReportServerBaseURL">apnsReportServerBaseURL</option>
+		
+		<option value="//api/name/callback">callback</option>
+		
+		<option value="//api/name/confirmActionIdentifier">confirmActionIdentifier</option>
+		
+		<option value="//api/name/confirmActionTitle">confirmActionTitle</option>
+		
+		<option value="//api/name/deleteActionIdentifier">deleteActionIdentifier</option>
+		
+		<option value="//api/name/deleteActionTitle">deleteActionTitle</option>
+		
+		<option value="//api/name/deviceToken">deviceToken</option>
+		
+		<option value="//api/name/hiddenPreviewsBodyPlaceholder">hiddenPreviewsBodyPlaceholder</option>
+		
+		<option value="//api/name/pushCategoryIdentifier">pushCategoryIdentifier</option>
+		
+		<option value="//api/name/securityApplicationGroupIdentifier">securityApplicationGroupIdentifier</option>
+		
+		<option value="//api/name/supportLegacyAPNsPayload">supportLegacyAPNsPayload</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/getInstance">+ getInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/bodyStringWithUserInfo:userID:">- bodyStringWithUserInfo:userID:</option>
+		
+		<option value="//api/name/getEventNameWithUserInfo:">- getEventNameWithUserInfo:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/notifyCallbackFailWithError:">- notifyCallbackFailWithError:</option>
+		
+		<option value="//api/name/notifyCallbackSuccessWithDeviceToken:">- notifyCallbackSuccessWithDeviceToken:</option>
+		
+		<option value="//api/name/registerForRemoteNotifications:">- registerForRemoteNotifications:</option>
+		
+		<option value="//api/name/registerForRemoteNotificationsCompat">- registerForRemoteNotificationsCompat</option>
+		
+		<option value="//api/name/reportAPNsArrived:userID:completionBlock:">- reportAPNsArrived:userID:completionBlock:</option>
+		
+		<option value="//api/name/reportAPNsOpened:userID:completionBlock:">- reportAPNsOpened:userID:completionBlock:</option>
+		
+		<option value="//api/name/reportAPNsTouched:userID:destructive:completionBlock:">- reportAPNsTouched:userID:destructive:completionBlock:</option>
+		
+		<option value="//api/name/requestReport:completionBlock:">- requestReport:completionBlock:</option>
+		
+		<option value="//api/name/requestWithURL:bodyData:">- requestWithURL:bodyData:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNPushMgr Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNPushMgr.h<br />HNPushMgr.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>APNs 사용을 위한 등록 및 APNs 토큰 관리 클래스</p><p>만약, 앱의 UIApplicationDelegate 구현 객체가 아래의 메소드들을 사용할 경우,</p>
+
+<p>HNAppDelegate 를 확장해야 하며, 메소드 내에서 [super &hellip;] 메소드를 호출해야 함.</p>
+
+<p>application:didFinishLaunchingWithOptions:</p>
+
+<p>application:didRegisterForRemoteNotificationsWithDeviceToken:</p>
+
+<p>application:didFailToRegisterForRemoteNotificationsWithError:</p>
+
+<p>application:didReceiveRemoteNotification:fetchCompletionHandler:</p>
+
+<p>그러지 않으면, APNs 사용을 위한 등록 및 토큰 획득, APNs 메시지 수신 등이 동작이 정상적으로 이루어지지 않을 수 있음.</p>
+
+<p>또한, 앱의 Info.plist 의 UIBackgroundModes 항목에 remote-notification 를 추가하거나,
+Capabilities > Background Modes > Remote Notifications 항목을 활성화 해야 함.</p>
+
+<p>그렇지 않으면, 아래와 같은 로그가 출력됨.</p>
+
+<p>You&rsquo;ve implemented [<UIApplicationDelegate> application:didReceiveRemoteNotification:fetchCompletionHandler:],
+but you still need to add &ldquo;remote-notification&rdquo; to the list of your supported UIBackgroundModes in your Info.plist.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getInstance" title="getInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInstance">+&nbsp;getInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 사용을 위한 등록 및 APNs 토큰 관리 객체 생성</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype _Nullable)getInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>HNPushMgr</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerForRemoteNotifications:" title="registerForRemoteNotifications:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerForRemoteNotifications:">&ndash;&nbsp;registerForRemoteNotifications:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 사용을 위한 등록 요청</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerForRemoteNotifications:(NSObject&lt;HNPushRegisterCallback&gt; *_Nullable)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p><a href="../Protocols/HNPushRegisterCallback.html">HNPushRegisterCallback</a> 구현 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/HNPushRegisterCallback.html">HNPushRegisterCallback</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reportAPNsArrived:userID:completionBlock:" title="reportAPNsArrived:userID:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reportAPNsArrived:userID:completionBlock:">&ndash;&nbsp;reportAPNsArrived:userID:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<pre><code> HNMobileFramework_iOS_cocoapods 프레임워크를 app extension 에서 사용할 때 컴파일 에러를 방지하기 위한 전처리 플래그
+ app Extension 타겟에서 HNMobileFramework_iOS_cocoapods 프레임워크를 사용하려면 Build Settings &gt; Preprocessor Macros 항목에 APPEXT=1 를 추가할 것
+</code></pre>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)reportAPNsArrived:(NSDictionary *_Nonnull)<em>userInfo</em> userID:(NSString *_Nullable)<em>userID</em> completionBlock:(void ( ^ ) ( NSData *, NSURLResponse *, NSError *))<em>completionBlock</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reportAPNsTouched:userID:destructive:completionBlock:" title="reportAPNsTouched:userID:destructive:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reportAPNsTouched:userID:destructive:completionBlock:">&ndash;&nbsp;reportAPNsTouched:userID:destructive:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 선택 이벤트 정보를 서버에 전송</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)reportAPNsTouched:(NSDictionary *_Nonnull)<em>userInfo</em> userID:(NSString *_Nullable)<em>userID</em> destructive:(BOOL)<em>destructive</em> completionBlock:(void ( ^ ) ( NSData *, NSURLResponse *, NSError *))<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>notification payload</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>사용자 아이디 (nil 일 경우 @&ldquo;_guest&rdquo; 적용됨)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>destructive</code></th>
+						<td><p>&lsquo;삭제&rsquo;, &lsquo;제거&rsquo; 등의 dismiss 이벤트일 경우 YES, 그렇지 않으면 NO</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>정보 전송 결과 처리를 위한 블럭 (NSURLSession delegate queue 에서 호출됨)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>userInfo 는 아래의 프로토콜과 일치해야 함
+{
+aps =     {
+alert =         {
+body = &ldquo;&rdquo;;
+eventName = &ldquo;test_event_20180807000032&rdquo;; // 필수
+resourceType = &ldquo;&rdquo;;
+resourceURL = &ldquo;<a href="http://www.hyperlinkcode.com/images/sample-image.jpg">http://www.hyperlinkcode.com/images/sample-image.jpg</a>&rdquo;;
+title = &ldquo;\Ud14c\Uc2a4\Ud2b8_\Ud478\Uc2dc_2&rdquo;;
+version = 10;
+};
+badge = 10;
+category = &ldquo;&rdquo;;
+&ldquo;mutable-content&rdquo; = 1;
+};
+}</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reportAPNsOpened:userID:completionBlock:" title="reportAPNsOpened:userID:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reportAPNsOpened:userID:completionBlock:">&ndash;&nbsp;reportAPNsOpened:userID:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 열람 이벤트 정보를 서버로 전송</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)reportAPNsOpened:(NSDictionary *_Nonnull)<em>userInfo</em> userID:(NSString *_Nullable)<em>userID</em> completionBlock:(void ( ^ ) ( NSData *, NSURLResponse *, NSError *))<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>notification payload</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>사용자 아이디 (nil 일 경우 @&ldquo;_guest&rdquo; 적용됨)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>정보 전송 결과 처리를 위한 블럭 (NSURLSession delegate queue 에서 호출됨)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>userInfo 는 아래의 프로토콜과 일치해야 함
+{
+aps =     {
+alert =         {
+body = &ldquo;&rdquo;;
+eventName = &ldquo;test_event_20180807000032&rdquo;; // 필수
+resourceType = &ldquo;&rdquo;;
+resourceURL = &ldquo;<a href="http://www.hyperlinkcode.com/images/sample-image.jpg">http://www.hyperlinkcode.com/images/sample-image.jpg</a>&rdquo;;
+title = &ldquo;\Ud14c\Uc2a4\Ud2b8_\Ud478\Uc2dc_2&rdquo;;
+version = 10;
+};
+badge = 10;
+category = &ldquo;&rdquo;;
+&ldquo;mutable-content&rdquo; = 1;
+};
+}</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyCallbackSuccessWithDeviceToken:" title="notifyCallbackSuccessWithDeviceToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyCallbackSuccessWithDeviceToken:">&ndash;&nbsp;notifyCallbackSuccessWithDeviceToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="../Protocols/HNPushRegisterCallback.html">HNPushRegisterCallback</a> 구현 객체에 등록 성공 알림</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyCallbackSuccessWithDeviceToken:(NSData *_Nonnull)<em>deviceToken</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>internal use only</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifyCallbackFailWithError:" title="notifyCallbackFailWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifyCallbackFailWithError:">&ndash;&nbsp;notifyCallbackFailWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="../Protocols/HNPushRegisterCallback.html">HNPushRegisterCallback</a> 구현 객체에 등록 실패 알림</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)notifyCallbackFailWithError:(NSError *_Nullable)<em>error</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>internal use only</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestReport:completionBlock:" title="requestReport:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestReport:completionBlock:">&ndash;&nbsp;requestReport:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)requestReport:(NSMutableURLRequest *)<em>request</em> completionBlock:(void ( ^ ) ( NSData *data , NSURLResponse *response , NSError *error ))<em>completionBlock</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bodyStringWithUserInfo:userID:" title="bodyStringWithUserInfo:userID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bodyStringWithUserInfo:userID:">&ndash;&nbsp;bodyStringWithUserInfo:userID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)bodyStringWithUserInfo:(NSDictionary *)<em>userInfo</em> userID:(NSString *)<em>userID</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getEventNameWithUserInfo:" title="getEventNameWithUserInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getEventNameWithUserInfo:">&ndash;&nbsp;getEventNameWithUserInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getEventNameWithUserInfo:(NSDictionary *)<em>userInfo</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWithURL:bodyData:" title="requestWithURL:bodyData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWithURL:bodyData:">&ndash;&nbsp;requestWithURL:bodyData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestWithURL:(NSURL *)<em>url</em> bodyData:(NSData *)<em>bodyData</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerForRemoteNotificationsCompat" title="registerForRemoteNotificationsCompat"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerForRemoteNotificationsCompat">&ndash;&nbsp;registerForRemoteNotificationsCompat</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>iOS 10.0 이상 또는 하위 버전을 지원하기 위한 APNs 등록 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerForRemoteNotificationsCompat</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/deviceToken" title="deviceToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceToken">&nbsp;&nbsp;deviceToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 토큰</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *deviceToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pushCategoryIdentifier" title="pushCategoryIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pushCategoryIdentifier">&nbsp;&nbsp;pushCategoryIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 메시지에 대한 카테고리 식별자</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *pushCategoryIdentifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>앱의 bundleIdentifier 로 설정됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/confirmActionIdentifier" title="confirmActionIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/confirmActionIdentifier">&nbsp;&nbsp;confirmActionIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 메시지 수신시 버튼으로 보여줄 &lsquo;확인&rsquo; 버튼에 대한 액션 식별자</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *confirmActionIdentifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HNMobileFramework 의 bundleIdentifier 에 .confirm 추가하여 설정됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/confirmActionTitle" title="confirmActionTitle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/confirmActionTitle">&nbsp;&nbsp;confirmActionTitle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 메시지 수신시 버튼으로 보여줄 &lsquo;확인&rsquo; 버튼에 대한 타이틀</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *confirmActionTitle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>설정하지 않을 경우 &lsquo;더보기&rsquo; 적용됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteActionIdentifier" title="deleteActionIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteActionIdentifier">&nbsp;&nbsp;deleteActionIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 메시지 수신시 버튼으로 보여줄 &lsquo;삭제&rsquo; 버튼에 대한 액션 식별자</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *deleteActionIdentifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HNMobileFramework 의 bundleIdentifier 에 .delete 추가하여 설정됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hiddenPreviewsBodyPlaceholder" title="hiddenPreviewsBodyPlaceholder"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hiddenPreviewsBodyPlaceholder">&nbsp;&nbsp;hiddenPreviewsBodyPlaceholder</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>설정 > 알림 > 미리보기 표시가 &lsquo;항상&rsquo; 이 아닐 때 (즉, hidden notification 으로 보여줄 때) 표현될 메시지</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *hiddenPreviewsBodyPlaceholder</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>iOS 11.0 부터 적용 가능, &lsquo;%lu 개의 메시지가 도착했습니다.&rsquo; 등의 포맷 형식 적용 가능함</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="https://developer.apple.com/videos/play/wwdc2017/708/">https://developer.apple.com/videos/play/wwdc2017/708/</a> 12:13 부분 참고</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteActionTitle" title="deleteActionTitle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteActionTitle">&nbsp;&nbsp;deleteActionTitle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 메시지 수신시 버튼으로 보여줄 &lsquo;삭제&rsquo; 버튼에 대한 액션 식별자</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *deleteActionTitle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>설정하지 않을 경우 &lsquo;삭제&rsquo; 적용됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/securityApplicationGroupIdentifier" title="securityApplicationGroupIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/securityApplicationGroupIdentifier">&nbsp;&nbsp;securityApplicationGroupIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>앱에서 notification service app extension 을 사용할 경우, 앱 &lt;> extension 데이터 교환을 위해 설정하는 그룹 식별자</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *securityApplicationGroupIdentifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="https://developer.apple.com/library/content/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html">https://developer.apple.com/library/content/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html</a>#//apple_ref/doc/uid/TP40014214-CH21-SW1</p></code></li>
+					
+					<li><code><p><a href="https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html">https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html</a>#//apple_ref/doc/uid/TP40011195-CH4-SW19</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/apnsReportServerBaseURL" title="apnsReportServerBaseURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/apnsReportServerBaseURL">&nbsp;&nbsp;apnsReportServerBaseURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APNs 이벤트 정보가 전송될 서버의 기본 URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSURL *apnsReportServerBaseURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportLegacyAPNsPayload" title="supportLegacyAPNsPayload"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportLegacyAPNsPayload">&nbsp;&nbsp;supportLegacyAPNsPayload</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>레거시 시스템에서 발송되는 APNs payload 사용 설정</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL supportLegacyAPNsPayload</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>만약, 레거시 시스템에서 정확하지 않은 payload 를 이용하여 APNs 를 발송할 경우 이 속성을 YES 로 설정해야 APNs 를 정상적으로 처리할 수 있음.
+기본값은 NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNPushMgr.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/callback" title="callback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/callback">&nbsp;&nbsp;callback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSObject&lt;HNPushRegisterCallback&gt; *callback</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

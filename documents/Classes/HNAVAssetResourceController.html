@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNAVAssetResourceController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/avAsset">avAsset</option>
+		
+		<option value="//api/name/avAssetNSURLAuthenticationChallengeBlock">avAssetNSURLAuthenticationChallengeBlock</option>
+		
+		<option value="//api/name/avAssetPropertyLoadingCompletionBlock">avAssetPropertyLoadingCompletionBlock</option>
+		
+		<option value="//api/name/avAssetPropertyLoadingResultBlock">avAssetPropertyLoadingResultBlock</option>
+		
+		<option value="//api/name/avAssetResourceLoaderDelegate">avAssetResourceLoaderDelegate</option>
+		
+		<option value="//api/name/avPlayer">avPlayer</option>
+		
+		<option value="//api/name/avPlayerCurrentItemChangedBlock">avPlayerCurrentItemChangedBlock</option>
+		
+		<option value="//api/name/avPlayerCurrentTimeObserverToken">avPlayerCurrentTimeObserverToken</option>
+		
+		<option value="//api/name/avPlayerItem">avPlayerItem</option>
+		
+		<option value="//api/name/avPlayerItemAccessLogCreatedBlock">avPlayerItemAccessLogCreatedBlock</option>
+		
+		<option value="//api/name/avPlayerItemDidReachToEndBlock">avPlayerItemDidReachToEndBlock</option>
+		
+		<option value="//api/name/avPlayerItemErrorLogCreatedBlock">avPlayerItemErrorLogCreatedBlock</option>
+		
+		<option value="//api/name/avPlayerItemStatusResultBlock">avPlayerItemStatusResultBlock</option>
+		
+		<option value="//api/name/avPlayerRateChangedBlock">avPlayerRateChangedBlock</option>
+		
+		<option value="//api/name/defaultResourceLoaderDelegate">defaultResourceLoaderDelegate</option>
+		
+		<option value="//api/name/renewalLoadingRequestBlock">renewalLoadingRequestBlock</option>
+		
+		<option value="//api/name/resourceLoadingRequestBlock">resourceLoadingRequestBlock</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addPeriodicTimeObserverForInterval:queue:block:">- addPeriodicTimeObserverForInterval:queue:block:</option>
+		
+		<option value="//api/name/checkAvailableMetaDataFormatsPropertyStatus:error:">- checkAvailableMetaDataFormatsPropertyStatus:error:</option>
+		
+		<option value="//api/name/checkCompatibleWithAirPlayVideoPropertyStatus:error:">- checkCompatibleWithAirPlayVideoPropertyStatus:error:</option>
+		
+		<option value="//api/name/checkCompatibleWithSavedPhotosAlbumPropertyStatus:error:">- checkCompatibleWithSavedPhotosAlbumPropertyStatus:error:</option>
+		
+		<option value="//api/name/checkComposablePropertyStatus:error:">- checkComposablePropertyStatus:error:</option>
+		
+		<option value="//api/name/checkExportablePropertyStatus:error:">- checkExportablePropertyStatus:error:</option>
+		
+		<option value="//api/name/checkHasProtectedContentPropertyStatus:error:">- checkHasProtectedContentPropertyStatus:error:</option>
+		
+		<option value="//api/name/checkPlayablePropertyStatus:error:">- checkPlayablePropertyStatus:error:</option>
+		
+		<option value="//api/name/checkReadablePropertyStatus:error:">- checkReadablePropertyStatus:error:</option>
+		
+		<option value="//api/name/connectAuthenticateChallengeBlock">- connectAuthenticateChallengeBlock</option>
+		
+		<option value="//api/name/createAVAssetWithURL:">- createAVAssetWithURL:</option>
+		
+		<option value="//api/name/createAVPlayerItemWithAsset:">- createAVPlayerItemWithAsset:</option>
+		
+		<option value="//api/name/createAVPlayerWithItem:">- createAVPlayerWithItem:</option>
+		
+		<option value="//api/name/implementAVAssetPropertyLoadingBlock">- implementAVAssetPropertyLoadingBlock</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/observeValueForKeyPath:ofObject:change:context:">- observeValueForKeyPath:ofObject:change:context:</option>
+		
+		<option value="//api/name/playerItemDidReachEnd:">- playerItemDidReachEnd:</option>
+		
+		<option value="//api/name/playerItemNewAccessLogCreated:">- playerItemNewAccessLogCreated:</option>
+		
+		<option value="//api/name/playerItemNewErrorLogCreated:">- playerItemNewErrorLogCreated:</option>
+		
+		<option value="//api/name/releaseResources">- releaseResources</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNAVAssetResourceController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNAVAssetResourceController.h<br />HNAVAssetResourceController.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>AVAset, AVPlayerItem, AVPlayer 를 생성하고 각 객체의 상태에 대한 기본적인 처리를 담당하는 클래스</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAVAssetWithURL:" title="createAVAssetWithURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAVAssetWithURL:">&ndash;&nbsp;createAVAssetWithURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 객체 생성</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AVURLAsset *_Nonnull)createAVAssetWithURL:(NSURL *_Nonnull)<em>assetURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>assetURL</code></th>
+						<td><p>AVAsset 객체 생성시 사용될 NSURL 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVURLAsset</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAVPlayerItemWithAsset:" title="createAVPlayerItemWithAsset:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAVPlayerItemWithAsset:">&ndash;&nbsp;createAVPlayerItemWithAsset:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 객체 생성</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AVPlayerItem *_Nonnull)createAVPlayerItemWithAsset:(AVAsset *_Nonnull)<em>avAsset</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>avAsset</code></th>
+						<td><p>AVPlayerItem 객체 생성시 사용될 AVAsset 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVPlayerItem 객체를 생성하며
+생성된 AVPlayerItem 의 status 속성에 대한 상태 처리 및
+AVPlayerItemDidPlayToEndTimeNotification,
+AVPlayerItemNewAccessLogEntryNotification,
+AVPlayerItemNewErrorLogEntryNotification 이벤트 처리를 진행함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAVPlayerWithItem:" title="createAVPlayerWithItem:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAVPlayerWithItem:">&ndash;&nbsp;createAVPlayerWithItem:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayer 객체 생성</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AVPlayer *)createAVPlayerWithItem:(AVPlayerItem *)<em>avPlayerItem</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>avPlayerItem</code></th>
+						<td><p>AVPlayer 객체 생성시 사용될 AVPlayerItem 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>AVPlayer</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVPlayer 객체를 생성하며
+생성된 AVPlayer 의 currentItem, rate 속성에 대한 이벤트 처리를 진행함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectAuthenticateChallengeBlock" title="connectAuthenticateChallengeBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectAuthenticateChallengeBlock">&ndash;&nbsp;connectAuthenticateChallengeBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 resourceLoader 객체 연결</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectAuthenticateChallengeBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addPeriodicTimeObserverForInterval:queue:block:" title="addPeriodicTimeObserverForInterval:queue:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addPeriodicTimeObserverForInterval:queue:block:">&ndash;&nbsp;addPeriodicTimeObserverForInterval:queue:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayer 의 currentTime 이 변경될 때마다 호출될 블럭을 등록</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addPeriodicTimeObserverForInterval:(CMTime)<em>interval</em> queue:(dispatch_queue_t _Nullable)<em>queue</em> block:(_Nullable HNAVPlayerCurrentTimePeriodBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>interval</code></th>
+						<td><p>블럭이 호출될 주기</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>queue</code></th>
+						<td><p>블럭이 호출될 dispatch_queue_t</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>호출될 블럭</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/releaseResources" title="releaseResources"></a>
+	<h3 class="method-title"><code><a href="#//api/name/releaseResources">&ndash;&nbsp;releaseResources</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset, AVPlayerItem, AVPlayer 등의 객체를 해제</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)releaseResources</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>UIViewController 의 life cycle 중 어느 시점에는 반드시 호출되어야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/implementAVAssetPropertyLoadingBlock" title="implementAVAssetPropertyLoadingBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/implementAVAssetPropertyLoadingBlock">&ndash;&nbsp;implementAVAssetPropertyLoadingBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAssetPropertyLoadingCompletionBlock 블럭 구현</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)implementAVAssetPropertyLoadingBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkPlayablePropertyStatus:error:" title="checkPlayablePropertyStatus:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkPlayablePropertyStatus:error:">&ndash;&nbsp;checkPlayablePropertyStatus:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 playable 속성을 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkPlayablePropertyStatus:(AVKeyValueStatus)<em>status</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>속성 로딩 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>속성 로딩 중 발생한 에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>playable 속성에 따라 영상 재생 또는 재생 실패 팝업 출력</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkExportablePropertyStatus:error:" title="checkExportablePropertyStatus:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkExportablePropertyStatus:error:">&ndash;&nbsp;checkExportablePropertyStatus:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 exportable 속성을 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkExportablePropertyStatus:(AVKeyValueStatus)<em>status</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>속성 로딩 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>속성 로딩 중 발생한 에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>exportable 속성에 따른 처리 (아무것도 하지 않음)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkReadablePropertyStatus:error:" title="checkReadablePropertyStatus:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkReadablePropertyStatus:error:">&ndash;&nbsp;checkReadablePropertyStatus:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 readable 속성을 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkReadablePropertyStatus:(AVKeyValueStatus)<em>status</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>속성 로딩 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>속성 로딩 중 발생한 에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>readable 속성에 따른 처리 (아무것도 하지 않음)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkComposablePropertyStatus:error:" title="checkComposablePropertyStatus:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkComposablePropertyStatus:error:">&ndash;&nbsp;checkComposablePropertyStatus:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 composable 속성을 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkComposablePropertyStatus:(AVKeyValueStatus)<em>status</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>속성 로딩 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>속성 로딩 중 발생한 에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>composable 속성에 따른 처리 (아무것도 하지 않음)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkHasProtectedContentPropertyStatus:error:" title="checkHasProtectedContentPropertyStatus:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkHasProtectedContentPropertyStatus:error:">&ndash;&nbsp;checkHasProtectedContentPropertyStatus:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 hasProtectedContent 속성을 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkHasProtectedContentPropertyStatus:(AVKeyValueStatus)<em>status</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>속성 로딩 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>속성 로딩 중 발생한 에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>hasProtectedContent 속성에 따른 처리
+추가적인 인증 과정이 필요할 수 있음</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkCompatibleWithAirPlayVideoPropertyStatus:error:" title="checkCompatibleWithAirPlayVideoPropertyStatus:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkCompatibleWithAirPlayVideoPropertyStatus:error:">&ndash;&nbsp;checkCompatibleWithAirPlayVideoPropertyStatus:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 compatibleWithAirPlayVideo 속성을 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkCompatibleWithAirPlayVideoPropertyStatus:(AVKeyValueStatus)<em>status</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>속성 로딩 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>속성 로딩 중 발생한 에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>compatibleWithAirPlayVideo 속성에 따른 처리 (아무것도 하지 않음)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkCompatibleWithSavedPhotosAlbumPropertyStatus:error:" title="checkCompatibleWithSavedPhotosAlbumPropertyStatus:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkCompatibleWithSavedPhotosAlbumPropertyStatus:error:">&ndash;&nbsp;checkCompatibleWithSavedPhotosAlbumPropertyStatus:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 compatibleWithPhotosAlbum 속성을 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkCompatibleWithSavedPhotosAlbumPropertyStatus:(AVKeyValueStatus)<em>status</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>속성 로딩 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>속성 로딩 중 발생한 에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>compatibleWithPhotosAlbum 속성에 따른 처리 (아무것도 하지 않음)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkAvailableMetaDataFormatsPropertyStatus:error:" title="checkAvailableMetaDataFormatsPropertyStatus:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkAvailableMetaDataFormatsPropertyStatus:error:">&ndash;&nbsp;checkAvailableMetaDataFormatsPropertyStatus:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 availableMetaDataFormats 속성을 확인</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkAvailableMetaDataFormatsPropertyStatus:(AVKeyValueStatus)<em>status</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>속성 로딩 상태</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>속성 로딩 중 발생한 에러</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>availableMetaDataFormats 속성에 따른 처리 (아무것도 하지 않음)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerItemDidReachEnd:" title="playerItemDidReachEnd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerItemDidReachEnd:">&ndash;&nbsp;playerItemDidReachEnd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 이 끝까지 재생되었을 때 호출되는 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerItemDidReachEnd:(NSNotification *)<em>notification</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notification</code></th>
+						<td><p>NSNotification 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVPlayerItemDidPlayToEndTimeNotification</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerItemNewAccessLogCreated:" title="playerItemNewAccessLogCreated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerItemNewAccessLogCreated:">&ndash;&nbsp;playerItemNewAccessLogCreated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 의 AVPlayerItemAccessLog 객체가 생성될 때 호출되는 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerItemNewAccessLogCreated:(NSNotification *)<em>notification</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notification</code></th>
+						<td><p>NSNotification 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVPlayerItemNewAccessLogEntryNotification</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerItemNewErrorLogCreated:" title="playerItemNewErrorLogCreated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerItemNewErrorLogCreated:">&ndash;&nbsp;playerItemNewErrorLogCreated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 의 AVPlayerItemErrorLog 객체가 생성될 때 호출되는 메소드</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerItemNewErrorLogCreated:(NSNotificationCenter *)<em>notification</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notification</code></th>
+						<td><p>NSNotification 객체</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVPlayerItemNewErrorLogEntryNotification</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/observeValueForKeyPath:ofObject:change:context:" title="observeValueForKeyPath:ofObject:change:context:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/observeValueForKeyPath:ofObject:change:context:">&ndash;&nbsp;observeValueForKeyPath:ofObject:change:context:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the value at the specified key path relative
+to the given object has changed.
+Adjust the movie play and pause button controls when the
+player item &ldquo;status&rdquo; value changes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)observeValueForKeyPath:(NSString *)<em>path</em> ofObject:(id)<em>object</em> change:(NSDictionary *)<em>change</em> context:(void *)<em>context</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update the movie
+scrubber control when the player item is ready to play.</p>
+
+<p>Adjust the movie scrubber control when the player item
+&ldquo;timebase&rdquo; value changes.</p>
+
+<p>For updates of the player
+&ldquo;currentItem&rdquo; property, set the AVPlayer for which the
+player layer displays visual output.
+NOTE: this method is invoked on the main queue.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/avPlayer" title="avPlayer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayer">&nbsp;&nbsp;avPlayer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayer 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) AVPlayer *avPlayer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avPlayerItem" title="avPlayerItem"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayerItem">&nbsp;&nbsp;avPlayerItem</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayer 생성시 사용되는 AVPlayerItem 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) AVPlayerItem *avPlayerItem</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avAsset" title="avAsset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avAsset">&nbsp;&nbsp;avAsset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 생성시 사용되는 AVAsset 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) AVURLAsset *avAsset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avAssetResourceLoaderDelegate" title="avAssetResourceLoaderDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avAssetResourceLoaderDelegate">&nbsp;&nbsp;avAssetResourceLoaderDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAssetResourceLoaderDelegate 구현 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSObject&lt;AVAssetResourceLoaderDelegate&gt; *avAssetResourceLoaderDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVURLAsset 을 재생하는 과정에서 Http Digest 인증을 해야 할 경우
+AVAssetResourceLoaderDelegate 구현 객체를 설정함으로써 진행할 수 있음</p>
+
+<p>만약, 이 속성을 유효한 객체로 설정하지 않을 경우 <a href="#//api/name/avAssetNSURLAuthenticationChallengeBlock">avAssetNSURLAuthenticationChallengeBlock</a> 블럭을 반드시 구현해야 함.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avAssetNSURLAuthenticationChallengeBlock" title="avAssetNSURLAuthenticationChallengeBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avAssetNSURLAuthenticationChallengeBlock">&nbsp;&nbsp;avAssetNSURLAuthenticationChallengeBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 을 로딩하는 과정에서 Http Digest 인증을 해야 할 경우 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetNSURLAuthenticationChallengeBlock avAssetNSURLAuthenticationChallengeBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+
+<p>만약, 이 블럭을 구현하지 않을 경우 <a href="#//api/name/avAssetResourceLoaderDelegate">avAssetResourceLoaderDelegate</a> 속성에 반드시 유효한 객체가 설정되어야 함</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resourceLoadingRequestBlock" title="resourceLoadingRequestBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoadingRequestBlock">&nbsp;&nbsp;resourceLoadingRequestBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 을 로딩하는 과정에서 추가적인 리소스 로딩이 필요할 경우 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetResourceLoadingRequestBlock resourceLoadingRequestBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨.</p>
+
+<p>만약, 이 블럭을 구현하지 않을 경우 <a href="#//api/name/avAssetResourceLoaderDelegate">avAssetResourceLoaderDelegate</a> 속성에 반드시 유효한 객체가 설정되어야 함.</p>
+
+<p>암호화된 AVAsset 을 다운로드 후 재생할 때, 복호화를 위한 키 파일을 다운로드 해야 하므로 이 블럭을 구현해야 함.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/renewalLoadingRequestBlock" title="renewalLoadingRequestBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/renewalLoadingRequestBlock">&nbsp;&nbsp;renewalLoadingRequestBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVURLAsset 을 로딩하는 과정에서 추가적인 리소스 로딩이 필요할 경우 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetResourceRenewalLoadingRequestBlock renewalLoadingRequestBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨.</p>
+
+<p>만약, 이 블럭을 구현하지 않을 경우 <a href="#//api/name/avAssetResourceLoaderDelegate">avAssetResourceLoaderDelegate</a> 속성에 반드시 유효한 객체가 설정되어야 함.</p>
+
+<p>암호화된 AVAsset 을 다운로드 후 재생할 때, 복호화를 위한 키 파일을 다운로드 해야 하므로 이 블럭을 구현해야 함.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avAssetPropertyLoadingResultBlock" title="avAssetPropertyLoadingResultBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avAssetPropertyLoadingResultBlock">&nbsp;&nbsp;avAssetPropertyLoadingResultBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 속성이 로딩된 결과를 처리할 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetPropertyLoadingResultBlock avAssetPropertyLoadingResultBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avPlayerItemAccessLogCreatedBlock" title="avPlayerItemAccessLogCreatedBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayerItemAccessLogCreatedBlock">&nbsp;&nbsp;avPlayerItemAccessLogCreatedBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 객체의 accessLog 객체가 생성되었을 때 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVPlayerItemAccessLogCreatedBlock avPlayerItemAccessLogCreatedBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avPlayerItemErrorLogCreatedBlock" title="avPlayerItemErrorLogCreatedBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayerItemErrorLogCreatedBlock">&nbsp;&nbsp;avPlayerItemErrorLogCreatedBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 객체의 errorLog 객체가 생성되었을 때 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVPlayerItemErrorLogCreatedBlock avPlayerItemErrorLogCreatedBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avPlayerItemStatusResultBlock" title="avPlayerItemStatusResultBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayerItemStatusResultBlock">&nbsp;&nbsp;avPlayerItemStatusResultBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 의 상태에 따른 처리를 진행할 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVPlayerItemStatusResultBlock avPlayerItemStatusResultBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avPlayerItemDidReachToEndBlock" title="avPlayerItemDidReachToEndBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayerItemDidReachToEndBlock">&nbsp;&nbsp;avPlayerItemDidReachToEndBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayerItem 이 끝까지 재생되었을 때 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVPlayerItemDidReachToEndBlock avPlayerItemDidReachToEndBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avPlayerRateChangedBlock" title="avPlayerRateChangedBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayerRateChangedBlock">&nbsp;&nbsp;avPlayerRateChangedBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayer 의 rate 속성이 변경될 때마다 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVPlayerRateChangedBlock avPlayerRateChangedBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avPlayerCurrentItemChangedBlock" title="avPlayerCurrentItemChangedBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayerCurrentItemChangedBlock">&nbsp;&nbsp;avPlayerCurrentItemChangedBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayer 의 currentItem 객체가 변경될 때마다 호출될 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVPlayerCurrentItemChangedBlock avPlayerCurrentItemChangedBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>이 블럭은 main thread 에서 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/defaultResourceLoaderDelegate" title="defaultResourceLoaderDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultResourceLoaderDelegate">&nbsp;&nbsp;defaultResourceLoaderDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAssetResourceLoaderDelegate 구현 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) HNAVAssetResourceLoaderCustomDelegate *defaultResourceLoaderDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avAssetPropertyLoadingCompletionBlock" title="avAssetPropertyLoadingCompletionBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avAssetPropertyLoadingCompletionBlock">&nbsp;&nbsp;avAssetPropertyLoadingCompletionBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAsset 의 속성 로딩 결과를 처리하는 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) HNAVAssetPropertyLoadingCompletionBlock avAssetPropertyLoadingCompletionBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/avPlayerCurrentTimeObserverToken" title="avPlayerCurrentTimeObserverToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/avPlayerCurrentTimeObserverToken">&nbsp;&nbsp;avPlayerCurrentTimeObserverToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVPlayer 의 Observing 토큰</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id avPlayerCurrentTimeObserverToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>[self.avPlayer addPeriodicTimeObserverForInterval:queue:usingBlock:]</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

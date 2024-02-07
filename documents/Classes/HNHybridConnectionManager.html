@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNHybridConnectionManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/downCompletionHandler">downCompletionHandler</option>
+		
+		<option value="//api/name/progressHandler">progressHandler</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/URLSession:dataTask:didReceiveData:">- URLSession:dataTask:didReceiveData:</option>
+		
+		<option value="//api/name/URLSession:dataTask:didReceiveResponse:completionHandler:">- URLSession:dataTask:didReceiveResponse:completionHandler:</option>
+		
+		<option value="//api/name/URLSession:task:didCompleteWithError:">- URLSession:task:didCompleteWithError:</option>
+		
+		<option value="//api/name/doDownload:andDownloadhandler:">- doDownload:andDownloadhandler:</option>
+		
+		<option value="//api/name/execute">- execute</option>
+		
+		<option value="//api/name/init:managerType:">- init:managerType:</option>
+		
+		<option value="//api/name/init:param:managerType:">- init:param:managerType:</option>
+		
+		<option value="//api/name/loadDefaultURLRequestSet:">- loadDefaultURLRequestSet:</option>
+		
+		<option value="//api/name/parseURLGetParam:">- parseURLGetParam:</option>
+		
+		<option value="//api/name/request:param:withMethod:andParamType:">- request:param:withMethod:andParamType:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNHybridConnectionManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/HNHybridBaseManager.html">HNHybridBaseManager</a> : NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSURLSessionDataDelegate<br />NSURLSessionDelegate<br />NSURLSessionTaskDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNHybridConnectionManager.h<br />HNHybridConnectionManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/progressHandler" title="progressHandler"></a>
+	<h3 class="method-title"><code><a href="#//api/name/progressHandler">&nbsp;&nbsp;progressHandler</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( float progressPercent , NSInteger downloadedSize ) progressHandler</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downCompletionHandler" title="downCompletionHandler"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downCompletionHandler">&nbsp;&nbsp;downCompletionHandler</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( NSData *data , NSString *errorReason ) downCompletionHandler</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init:param:managerType:" title="init:param:managerType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init:param:managerType:">&ndash;&nbsp;init:param:managerType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)init:(UIViewController *)<em>viewController</em> param:(WKWebView *)<em>webView</em> managerType:(NSString *)<em>mtype</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init:managerType:" title="init:managerType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init:managerType:">&ndash;&nbsp;init:managerType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)init:(UIViewController *)<em>viewController</em> managerType:(NSString *)<em>mtype</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/execute" title="execute"></a>
+	<h3 class="method-title"><code><a href="#//api/name/execute">&ndash;&nbsp;execute</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSObject *)execute</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/request:param:withMethod:andParamType:" title="request:param:withMethod:andParamType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/request:param:withMethod:andParamType:">&ndash;&nbsp;request:param:withMethod:andParamType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)request:(NSString *)<em>destination</em> param:(NSString *)<em>paramStr</em> withMethod:(NSString *)<em>httpMethod</em> andParamType:(NSString *)<em>paramType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/doDownload:andDownloadhandler:" title="doDownload:andDownloadhandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/doDownload:andDownloadhandler:">&ndash;&nbsp;doDownload:andDownloadhandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)doDownload:(NSString *)<em>downloadPath</em> andDownloadhandler:(void ( ^ ) ( float progressPercent , NSInteger downloadedSize ))<em>progressHandler</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/parseURLGetParam:" title="parseURLGetParam:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/parseURLGetParam:">&ndash;&nbsp;parseURLGetParam:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)parseURLGetParam:(NSDictionary *)<em>dic</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadDefaultURLRequestSet:" title="loadDefaultURLRequestSet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadDefaultURLRequestSet:">&ndash;&nbsp;loadDefaultURLRequestSet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)loadDefaultURLRequestSet:(NSMutableURLRequest *)<em>request</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:dataTask:didReceiveData:" title="URLSession:dataTask:didReceiveData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:dataTask:didReceiveData:">&ndash;&nbsp;URLSession:dataTask:didReceiveData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> dataTask:(NSURLSessionDataTask *)<em>dataTask</em> didReceiveData:(NSData *)<em>data</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:dataTask:didReceiveResponse:completionHandler:" title="URLSession:dataTask:didReceiveResponse:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:dataTask:didReceiveResponse:completionHandler:">&ndash;&nbsp;URLSession:dataTask:didReceiveResponse:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> dataTask:(NSURLSessionDataTask *)<em>dataTask</em> didReceiveResponse:(NSURLResponse *)<em>response</em> completionHandler:(void ( ^ ) ( NSURLSessionResponseDisposition disposition ))<em>completionHandler</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/URLSession:task:didCompleteWithError:" title="URLSession:task:didCompleteWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/URLSession:task:didCompleteWithError:">&ndash;&nbsp;URLSession:task:didCompleteWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)URLSession:(NSURLSession *)<em>session</em> task:(NSURLSessionTask *)<em>task</em> didCompleteWithError:(NSError *)<em>error</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

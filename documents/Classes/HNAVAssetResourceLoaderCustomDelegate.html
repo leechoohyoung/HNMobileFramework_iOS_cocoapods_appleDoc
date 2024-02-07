@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>HNAVAssetResourceLoaderCustomDelegate Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HNMobileFramework_iOS_cocoapods </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Hunet Co., Ltd.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/authenticationChallenge">authenticationChallenge</option>
+		
+		<option value="//api/name/authenticationChallengeBlock">authenticationChallengeBlock</option>
+		
+		<option value="//api/name/renewalLoadingRequestBlock">renewalLoadingRequestBlock</option>
+		
+		<option value="//api/name/renewalResourceLoadingRequest">renewalResourceLoadingRequest</option>
+		
+		<option value="//api/name/resourceLoadingRequest">resourceLoadingRequest</option>
+		
+		<option value="//api/name/resourceLoadingRequestBlock">resourceLoadingRequestBlock</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/resourceLoader:didCancelAuthenticationChallenge:">- resourceLoader:didCancelAuthenticationChallenge:</option>
+		
+		<option value="//api/name/resourceLoader:didCancelLoadingRequest:">- resourceLoader:didCancelLoadingRequest:</option>
+		
+		<option value="//api/name/resourceLoader:shouldWaitForLoadingOfRequestedResource:">- resourceLoader:shouldWaitForLoadingOfRequestedResource:</option>
+		
+		<option value="//api/name/resourceLoader:shouldWaitForRenewalOfRequestedResource:">- resourceLoader:shouldWaitForRenewalOfRequestedResource:</option>
+		
+		<option value="//api/name/resourceLoader:shouldWaitForResponseToAuthenticationChallenge:">- resourceLoader:shouldWaitForResponseToAuthenticationChallenge:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">HNAVAssetResourceLoaderCustomDelegate Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>AVAssetResourceLoaderDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>HNAVAssetResourceLoaderCustomDelegate.h<br />HNAVAssetResourceLoaderCustomDelegate.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>AVAssetResourceLoaderDelegate 구현 클래스</p><p>HLS 를 통해 스트리밍을 재생하는 과정에서 Http Digest 인증을 해야 할 경우
+<a href="#//api/name/authenticationChallengeBlock">authenticationChallengeBlock</a> 을 정의하여 인증 과정을 구현해야 함</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/resourceLoader:shouldWaitForLoadingOfRequestedResource:" title="resourceLoader:shouldWaitForLoadingOfRequestedResource:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoader:shouldWaitForLoadingOfRequestedResource:">&ndash;&nbsp;resourceLoader:shouldWaitForLoadingOfRequestedResource:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when assistance is required of the application to load a resource.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)resourceLoader:(AVAssetResourceLoader *)<em>resourceLoader</em> shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *)<em>loadingRequest</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the delegate can load the resource indicated by the AVAssetResourceLoadingRequest; otherwise NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resourceLoader:shouldWaitForRenewalOfRequestedResource:" title="resourceLoader:shouldWaitForRenewalOfRequestedResource:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoader:shouldWaitForRenewalOfRequestedResource:">&ndash;&nbsp;resourceLoader:shouldWaitForRenewalOfRequestedResource:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when assistance is required of the application to renew a resource.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)resourceLoader:(AVAssetResourceLoader *)<em>resourceLoader</em> shouldWaitForRenewalOfRequestedResource:(AVAssetResourceRenewalRequest *)<em>renewalRequest</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the delegate can renew the resource indicated by the AVAssetResourceLoadingRequest; otherwise NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resourceLoader:didCancelLoadingRequest:" title="resourceLoader:didCancelLoadingRequest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoader:didCancelLoadingRequest:">&ndash;&nbsp;resourceLoader:didCancelLoadingRequest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate that a prior loading request has been cancelled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resourceLoader:(AVAssetResourceLoader *)<em>resourceLoader</em> didCancelLoadingRequest:(AVAssetResourceLoadingRequest *)<em>loadingRequest</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Previously issued loading requests can be cancelled when data from the resource is no longer required or when a loading request is superseded by new requests for data from the same resource. For example, if to complete a seek operation it becomes necessary to load a range of bytes that&rsquo;s different from a range previously requested, the prior request may be cancelled while the delegate is still handling it.</p>
+
+<p>@param         loadingRequest
+The loading request that has been cancelled.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resourceLoader:shouldWaitForResponseToAuthenticationChallenge:" title="resourceLoader:shouldWaitForResponseToAuthenticationChallenge:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoader:shouldWaitForResponseToAuthenticationChallenge:">&ndash;&nbsp;resourceLoader:shouldWaitForResponseToAuthenticationChallenge:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when assistance is required of the application to respond to an authentication challenge.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)resourceLoader:(AVAssetResourceLoader *)<em>resourceLoader</em> shouldWaitForResponseToAuthenticationChallenge:(NSURLAuthenticationChallenge *)<em>authenticationChallenge</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resourceLoader:didCancelAuthenticationChallenge:" title="resourceLoader:didCancelAuthenticationChallenge:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoader:didCancelAuthenticationChallenge:">&ndash;&nbsp;resourceLoader:didCancelAuthenticationChallenge:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate that a prior authentication challenge has been cancelled.
+@param         <a href="#//api/name/authenticationChallenge">authenticationChallenge</a>
+The authentication challenge that has been cancelled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resourceLoader:(AVAssetResourceLoader *)<em>resourceLoader</em> didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)<em>authenticationChallenge</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/authenticationChallengeBlock" title="authenticationChallengeBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticationChallengeBlock">&nbsp;&nbsp;authenticationChallengeBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>인증(http header : WWW-Authenticate)을 수행할 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetNSURLAuthenticationChallengeBlock authenticationChallengeBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVAssetResourceLoaderCustomDelegate 객체를 사용하는 외부 객체는 이 블럭을 구현하여 인증(http header : WWW-Authenticate)을 수행할 수 있음.
+또한, 이 블럭은 main thread 에서 비동기로 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resourceLoadingRequestBlock" title="resourceLoadingRequestBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoadingRequestBlock">&nbsp;&nbsp;resourceLoadingRequestBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>추가적인 리소스 제공을 수행할 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetResourceLoadingRequestBlock resourceLoadingRequestBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVAssetResourceLoaderCustomDelegate 객체를 사용하는 외부 객체는 이 블럭을 구현하여 AVURLAsset 로딩에 사용되는 key 파일 등을 제공할 수 있음
+또한, 이 블럭은 main thread 에서 비동기로 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/renewalLoadingRequestBlock" title="renewalLoadingRequestBlock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/renewalLoadingRequestBlock">&nbsp;&nbsp;renewalLoadingRequestBlock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>추가적인 리소스 제공을 수행할 블럭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (copy) _Nullable HNAVAssetResourceRenewalLoadingRequestBlock renewalLoadingRequestBlock</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>AVAssetResourceLoaderCustomDelegate 객체를 사용하는 외부 객체는 이 블럭을 구현하여 AVURLAsset 로딩에 사용되는 key 파일 등을 제공할 수 있음
+또한, 이 블럭은 main thread 에서 비동기로 호출됨</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/authenticationChallenge" title="authenticationChallenge"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticationChallenge">&nbsp;&nbsp;authenticationChallenge</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>NSURLAuthenticationChallenge 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSURLAuthenticationChallenge *authenticationChallenge</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resourceLoadingRequest" title="resourceLoadingRequest"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resourceLoadingRequest">&nbsp;&nbsp;resourceLoadingRequest</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAssetResourceLoadingRequest 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AVAssetResourceLoadingRequest *resourceLoadingRequest</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/renewalResourceLoadingRequest" title="renewalResourceLoadingRequest"></a>
+	<h3 class="method-title"><code><a href="#//api/name/renewalResourceLoadingRequest">&nbsp;&nbsp;renewalResourceLoadingRequest</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>AVAssetResourceRenewalRequest 객체</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AVAssetResourceRenewalRequest *renewalResourceLoadingRequest</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">HNAVAssetResourceLoaderCustomDelegate.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 Hunet Co., Ltd. All rights reserved. Updated: 2021-03-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
